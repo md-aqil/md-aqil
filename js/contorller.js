@@ -41,14 +41,34 @@
        breakpoints: {
             
             640: {
-              freemode:true,
+              centeredSlides:true,
+              freemode:false,
               slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 0,
+
+
+               effect: 'coverflow',
+      
+              coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 60,
+              modifier: 3,
+              slideShadows : true,
             },
+
+
+
+             
+            },
+
+
             320: {
-              freemode:true,
+               spaceBetween: 0,
+              centeredSlides:true,
+              freemode:false,
               slidesPerView: 3,
-              spaceBetween: 20,
+             
             }
       }
 

@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+     <meta name="language" content="en">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Aqil</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css'>
 
@@ -16,6 +25,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
 
     
@@ -125,6 +135,7 @@
             <div class="grid">
 
               <a class="grid__item rellax grid__item--noclick" href="http://edunuts.com" data-rellax-speed="-1" target="_blank">
+                
                 <div class="box">
                   <div class="box__shadow"></div>
                   <img class="box__img" src="images/work/edunuts.jpg" alt="Some image"/>
@@ -381,21 +392,37 @@
 
     <!-- javascript -->
     <script type="text/javascript" src="js/rellax.js"></script>
+
+    
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
+
+
     <script src="js/TweenMax.min.js"></script>
     <script src="js/demo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 
     <script src="js/contorller.js"> </script>
     <script>
-    	var rellax = new Rellax('.rellax', {
-        // center: true
-        callback: function(position) {
-            // callback every position change
-            console.log(position);
+
+    	if (window.innerWidth > 760) {
+        
+        console.log('over mobile');
+
+             var rellax = new Rellax('.rellax', {
+            // center: true
+            callback: function(position) {
+                // callback every position change
+                console.log(position);
+            }
+          });
+
+
         }
-      });
+
+ 
+
+
 
       let spans = document.querySelectorAll('.word span');
         spans.forEach((span, idx) => {
