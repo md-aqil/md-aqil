@@ -360,10 +360,6 @@ main {
 	cursor: pointer;
 }
 
-.box {
-	position: relative;
-	margin: 2rem;
-}
 
 .box__title {
 	margin: 0;
@@ -572,9 +568,7 @@ main {
 		margin: 0;
 	}
 
-	.box {
-		margin: 4rem;
-	}
+
 
 	.box__title {
 		top: -4rem;
@@ -674,9 +668,6 @@ main {
 	.grid__item:nth-child(4n) {
 		margin-top: -5rem;
 	}*/
-	.box {
-		margin: 6rem 4.5rem;
-	}
 
 	.box__content {
 		display: block;

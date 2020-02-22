@@ -26,7 +26,9 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="css/mobile.css">
 
-
+	<link rel="stylesheet" href="css/splitting.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/master.css">
 
 </head>
 
@@ -77,52 +79,42 @@
         </ul>
       </nav>
       <div class="flex-box">
-        <div class="flex-item" style="flex-basis: 60%">
-          <h1 class="word rellax" data-rellax-speed="2" data-text="Hi," shadow-line>
+        <div class="flex-item" style="flex-basis: 50%">
+          <h1 class="word oswald"  data-scroll data-text="Hi," shadow-line>
             <span>H</span>
             <span>i</span>
             <!-- <span class="space"></span> -->
             <span>,</span>
           </h1>
-          <h1 class="rellax top-title" data-rellax-speed="1">
+          <h1 class="top-title fade-in"  data-scroll>
             I Design & Develope beatiful Webiste & Mobile App
           </h1>
-          <p class="font-lato tp-title">A UI/UX Designer / Developer</p>
+          <p class="oswald reveal-text"  data-scroll style="font-size: 30px;">A UI/UX Designer / Developer</p>
 
-          <!-- <button>Checkout Resume</button> -->
+       
         </div>
-        <div class="flex-item">
-          <div class="aqil-main">
-            <div class="box__shadow"></div>
-            <div class="font-image-box">
-              <div class="swiper-container swiper-front">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="images/work/aura.jpg" alt="">
+        <div class="flex-item" style="flex-basis: 50%">
+          	<div class="box">
+                <div class="spin-container">
+                <div class="shape">
+                  <div class="bd">
+                        <img class="" src="images/work/yellow-and-and-blue-colored-pencils-1762851.jpg" alt="">
+                     
                   </div>
-                  <div class="swiper-slide">
-                    <img src="images/work/bigradar.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/work/Home-bigly.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/work/man-cutting-hair-1319462.jpg" alt="">
-                  </div>
-
-
                 </div>
+                 </div>
               </div>
-            </div>
+              
+          <div class="aqil-main">
+         
+            <div class="rl-title fade-in" data-scroll>
 
-            <div class="rl-title">
-
-              Front-End Developer
-              and Web <span class="">Designer based
+              Front-End Developer <br>
+              and Web <span class="">Designer <br> based
                 in Delhi</span>
 
             </div>
-            <p class="box__content">"Contact Me 7210562014
+            <p class="box__content reveal-text blue"   data-scroll>"Contact Me 7210562014
               aqilali381@gmail.com"</p>
           </div>
 
@@ -132,9 +124,13 @@
       </div>
     </div>
   </main>
+  
 
   <section class="container">
-    <h1 class="normal-heading text-center">Works</h1>
+      <div class="fade-in" data-scroll>
+     
+    <h1 class="normal-heading text-center" data-splitting>Works</h1>
+        </div>
 
     <div class="row">
       <div align="center">
@@ -406,8 +402,8 @@
         </div>
 
       </div>
-      <div class="about-col">
-        <img class="about-img" src="images/men.png" alt="">
+      <div class="about-col reveal-text left" data-scroll>
+        <img class="about-img reveal-text"  src="images/men.png" alt="">
       </div>
     </div>
 
@@ -606,42 +602,6 @@
     </div>
   </section>
 
-  <section style="position: relative;z-index: 1;">
-    <center>
-      <h1 class="normal-heading font-right">
-        Android App Design
-      </h1>
-
-    </center>
-    <div class="swiper-container swiper-full-mobile swiper-container-initialized swiper-container-horizontal">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/screens/home.png" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/screens/Orders.png" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/screens/Pay. Now.png" alt="">
-        </div>
-
-
-        <div class="swiper-slide">
-          <img src="images/screens/space-details.png" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/screens/Home-bigly.png" alt="">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/screens/Imported product screen.png" alt="">
-        </div>
-
-      </div>
-
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-
-  </section>
 
 
   <section class="container spacethis">
@@ -683,16 +643,19 @@
     </div>
 
   </footer>
-
+	
 
 
 
   <!-- javascript -->
   <script src="js/jQuery.min.js"></script>
   <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-  <script src="js/contorller.js"> </script>
+  <script src="js/jQuery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scroll-out.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/splitting.js"></script>
+  <script src="js/controller.js"> </script>
   <script>
     let spans = document.querySelectorAll('.word span');
     spans.forEach((span, idx) => {
