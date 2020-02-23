@@ -380,13 +380,6 @@ footer .navbar {
   position: relative;
 }
 
-.swiper-slide {
-  font-size: 18px;
-  color: #fff;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .parallax-bg {
   position: absolute;
   left: 0;
@@ -988,4 +981,96 @@ footer .navbar {
   width: 80% !important;
   margin-left: auto;
 }
-/* pintrest Grid Layout */
+
+.swiper-menu.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-menu .swiper-slide {
+
+}
+.menu {
+  min-width: 100px;
+  width: 70%;
+  max-width: 320px;
+height: 100vh;
+padding: 15px;
+  background-color: var(--blue);
+  color: #fff;
+}
+.content {
+  width: 100%;
+}
+
+.menu-button {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: #000;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 3px;
+}
+.menu-button .bar:nth-of-type(1) {
+  margin-top: 0px;
+}
+.menu-button .bar:nth-of-type(3) {
+  margin-bottom: 0px;
+}
+
+.bar {
+  position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px auto;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+}
+
+.menu-button:hover .bar:nth-of-type(1) {
+  -webkit-transform: translateY(1.5px) rotate(-4.5deg);
+  -ms-transform: translateY(1.5px) rotate(-4.5deg);
+  transform: translateY(1.5px) rotate(-4.5deg);
+}
+.menu-button:hover .bar:nth-of-type(2) {
+  opacity: .9;
+}
+.menu-button:hover .bar:nth-of-type(3) {
+  -webkit-transform: translateY(-1.5px) rotate(4.5deg);
+  -ms-transform: translateY(-1.5px) rotate(4.5deg);
+  transform: translateY(-1.5px) rotate(4.5deg);
+}
+
+.cross .bar:nth-of-type(1) {
+  -webkit-transform: translateY(10px) rotate(-45deg);
+  -ms-transform: translateY(10px) rotate(-45deg);
+  transform: translateY(10px) rotate(-45deg);
+}
+.cross .bar:nth-of-type(2) {
+  opacity: 0;
+}
+.cross .bar:nth-of-type(3) {
+  -webkit-transform: translateY(-10px) rotate(45deg);
+  -ms-transform: translateY(-10px) rotate(45deg);
+  transform: translateY(-10px) rotate(45deg);
+}
+.cross:hover .bar:nth-of-type(1) {
+  -webkit-transform: translateY(13.5px) rotate(-40.5deg);
+  -ms-transform: translateY(13.5px) rotate(-40.5deg);
+  transform: translateY(13.5px) rotate(-40.5deg);
+}
+.cross:hover .bar:nth-of-type(2) {
+  opacity: .1;
+}
+.cross:hover .bar:nth-of-type(3) {
+  -webkit-transform: translateY(-13.5px) rotate(40.5deg);
+  -ms-transform: translateY(-13.5px) rotate(40.5deg);
+  transform: translateY(-13.5px) rotate(40.5deg);
+}

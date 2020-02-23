@@ -398,6 +398,22 @@ body {
 	  border-radius: 40% 60%;
 	}
   }
+
+  .mm {
+	/* border-radius: 30% 30% 20% 50% / 10% 40% 60% 30%; */
+	transition: border-radius 1s ease-out;
+	-webkit-animation: mm 1s ease-in-out infinite both alternate;
+	animation: mm 1s ease-in-out infinite both alternate;
+}
+
+  @keyframes mm {
+	0% {
+	  border-radius: 1% 20% 10% 2% / 10% 40% 60% 30%;
+	}
+	100% {
+		border-radius: 10% 2% 41% 20% /   10% 2% 1% 20%;
+	}
+  }
   
   
   .delay_1 {
