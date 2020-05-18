@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue App</title>
+    <link rel="stylesheet" href="beeicon-font.css">
+
+    
+
+</head>
+<body>
+
+    <main id="vueApp">
+      
+        <div>
+         
+           <form >
+              
+               <input type="text" v-model="blog.title" placeholder="title">
+                   
+               <input type="text" v-model="blog.link" placeholder="link">
+                 
+               <div>
+            
+                <input type="file" accept="image/jpeg" @change=uploadImage>
+             </div>
+
+             <div class="tags">
+                 <h2>Tags list</h2>
+
+                 <label for="">Design</label>
+                 <input type="checkbox" value="design" v-model="blog.tags">
+
+
+                 <label for="">develope</label>
+                 <input type="checkbox" value="develope" v-model="blog.tags">
+  
+             </div>
+             <div >
+                <h2>Categories</h2>
+                <select v-model="blog.categories">
+                    <option v-for="category in categories">{{category}}</option>
+                </select>
+             </div>
+
+               <button v-on:click.prevent="post">Submit</button>
+
+           </form>
+
+           <div style="border: 2px solid">
+            <p v-if="submitted">
+                thank yu
+            </p>
+            {{blog.title}}
+            <h2>
+                    
+                <img :src="blog.previewImage" alt="">
+              </h2>
+              
+              <ul>
+                  <h2>Tags</h2>
+                  <ul v-for="tag  in blog.tags">
+                  {{tag}}
+                  </ul>
+              </ul>
+
+              <div >
+                <h2>Categories</h2>
+                {{blog.categories}}
+             </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+    <script type="module">
+       
+        var allIcons =  new Vue({
+            el: '#vueApp',
+            data: {
+             blog: {
+                 
+                 title: "", 
+                 link: '',
+                 previewImage:'',
+                 tags: [],
+                 categories: "",
+             },
+             categories: ['web design', 'web develope', 'wordpress'],
+             submitted: false,
+
+            },
+            
+         
+
+            methods:  {
+
+              
+
+                post: function() {
+                   
+                    axios.post('https://vue-project-42d60.firebaseio.com/posts.json', 
+                        
+                         this.blog,
+
+                    ).then(function(data) {
+                       
+                      console.log(data);
+                      this.submitted = true;
+                    })
+
+                    
+                    
+                },
+
+                uploadImage(e){
+                const image = e.target.files[0];
+                const reader = new FileReader();
+                reader.readAsDataURL(image);
+                reader.onload = e =>{
+                    this.blog.previewImage = e.target.result;
+
+                    console.log('content load ' + this.previewImage);
+
+                };
+            }
+
+            },
+
+
+           
+        })
+    </script>
+    
+</body>
+</html>

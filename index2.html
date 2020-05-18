@@ -143,210 +143,39 @@
               </div>
             </main>
           
-  <section class="container">
+  <main class="container" id="vueApp">
       <div class="fade-in" data-scroll>
            <h1 class="normal-heading text-center oswald work" data-splitting>Works</h1>
         </div>
 
-    <div class="row">
 
-        <ul class="filter-list button-scroll">
-          <li class=" filter-button filter-active" data-filter="all">All</li>
-          <li class=" filter-button" data-filter="Webiste-uiux">Webiste UI/UX</li>
-          <li class=" filter-button" data-filter="Wordpress">Develope & Design (Wordpress)</li>
-          <li class=" filter-button" data-filter="android-uiux">Android UI/UX</li>
-
-        </ul>
-     
-      <br />
-      <main class="gallery" id="gallery">
-
-        <div class="gallery_product filter Webiste-uiux">
-          <article class="photo-card-wrapper">
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="images/work/edunuts.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="http://edunuts.com/" target="_blank">
-                <h4>Edunuts</h4>
-              </a>
-
-              <a href="http://edunuts.com/" target="_blank">View More</a>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/edu.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="https://www.coworly.com/" target="_blank">
-                <h4>Coworly</h4>
-              </a>
-
-              <a href="https://www.coworly.com/" target="_blank">View More</a>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/girl.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="http://bigly.io/" target="_blank">
-                <h4>Bigly</h4>
-              </a>
-
-              <a href="http://bigly.io/" target="_blank">View More</a>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/dyt2.png" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="https://doyourthng.com/" target="_blank">
-                <h4>DYT ONLINE</h4>
-              </a>
-
-              <a href="https://doyourthng.com/" target="_blank">View More</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/bigradar.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="https://www.bigradar.io/" target="_blank">
-                <h4>BigRadar</h4>
-              </a>
-
-              <a href="https://www.bigradar.io/" target="_blank">View More</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/gems-rudra.jpg" alt="">
-                <span class="tag">HTML,CSS,JS</span>
-              </div>
-              <a href="products/gemsrudra.html">
-                <h4>Gems Rudra</h4>
-              </a>
-
-              <a href="products/gemsrudra.html">View More</a>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/seo-street.jpg" alt="">
-                <span class="tag">HTML,CSS,JS</span>
-              </div>
-              <a href="https://www.seostreet.in/business/home/" target="_blank">
-                <h4>SEO Street</h4>
-              </a>
-
-              <a href="https://www.seostreet.in" target="_blank">Visit Site</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="images/work/edunuts.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="http://edunuts.com/" target="_blank">
-                <h4>Edunuts</h4>
-              </a>
-
-              <a href="http://edunuts.com/" target="_blank">View More</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="gallery_product filter Wordpress">
+        <div class="row">
           <article class="photo-card-wrapper">
 
-            <div class="photo-card">
+
+            <div class="photo-card"  v-for="(blog, i) in blogs" ::key="i">
               <div class="photo-card-img">
-                <img src="images/work/man-cutting-hair-1319462.jpg" alt="">
-                <span class="tag">Wordpress</span>
+                <img  :src="blog.previewImage" alt="">
+                <ul v-for="tag in blog.tags">
+                  <span class="tag">{{tag}}</span>
+              </ul>
+                  
               </div>
-              <a href="http://delhihairfixing.com/" target="_balnk">
-                <h4>Delhi Hair Fixing</h4>
+              <a href="http://edunuts.com/" target="_blank">
+                <h4>{{blog.title}}</h4>
               </a>
 
-              <p>
-                Delhi Hair Fixing, fix all king of hair problems
-              </p>
-              <a href="http://delhihairfixing.com/" target="_blank">View More</a>
+              <a v-if="blog.link" :href="blog.link" target="_blank">View More</a>
             </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/aura.jpg" alt="">
-                <span class="tag">Wordpress</span>
-              </div>
-              <a href="http://aurakidsboss.co.in/" target="_blank">
-                <h4>Aurakidsboss</h4>
-              </a>
-              <p>
-                A clothting Company
-              </p>
-              <a href="http://aurakidsboss.co.in/" target="_blank">Visit Site</a>
-            </div>
+
+           
+         
           </article>
         </div>
 
-        <div class="gallery_product filter android-uiux">
-          <article class="photo-card-wrapper ">
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="products/cab-img/01-Login.png" alt="">
-                <span class="tag">UI/UX Android</span>
-              </div>
-              <a href="products/cab.html" target="_blank">
-                <h4>Cab Rides</h4>
-              </a>
-
-              <a href="products/cab.html" target="_blank">View More</a>
-            </div>
-
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="products/flaxi-spaces/Home-Notificaton.png" alt="">
-                <span class="tag">UI/UX Android</span>
-              </div>
-              <a href="products/flaxi-space.html" target="_blank">
-                <h4>Flaxi Spaces</h4>
-              </a>
-              <a href="products/flaxi-space.html" target="_blank">View More</a>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="products/bigly/Home.png" alt="">
-                <span class="tag">UI/UX Android</span>
-              </div>
-              <a href="products/bigly.html" target="_blank">
-                <h4>Bigly.io</h4>
-              </a>
-
-              <a href="products/bigly.html" target="_blank">View More</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="products/Practices/020_signup.png" alt="">
-                <span class="tag">UI/UX Android</span>
-              </div>
-              <a href="products/practices.html" target="_blank">
-                <h4>Practices</h4>
-              </a>
-
-              <a href="products/practices.html" target="_blank">View More</a>
-            </div>
-          </article>
-        </div>
+    
       </main>
-  </section>
 
-          </section> <!-- swiper-slide -->
-        </div> 
-    </div>
     
   
   <section class="container spacer">
@@ -688,6 +517,45 @@
     });
   </script>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+  <script type="module">
+     
+ new Vue({
+          el: '#vueApp',
+          data: {
+            blogs: [],
+
+          categories: ['web design', 'web develope', 'wordpress'],
+           submitted: false,
+          },
+
+          
+          methods: {
+          },
+
+          created() {
+            
+              // https://md-aqil.github.io/bee-icon/selection.json
+              // https://vue-project-42d60.firebaseio.com/posts.json
+              axios
+              .get("https://vue-project-42d60.firebaseio.com/posts.json")
+              
+              .then(response => {
+                  this.blogs = response.data;
+                  console.log(this.blogs)
+              });
+              
+          },
+
+          computed: {
+             
+       },
+       
+      })
+  </script>
 
 
 </body>

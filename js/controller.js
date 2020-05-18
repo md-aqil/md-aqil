@@ -142,6 +142,19 @@ var swiper = new Swiper('.swiper-loop', {
   spaceBetween: 20,
 });
 
+var swiperFront = new Swiper('.swiper-front', {
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+  effect: 'fade',
+  freeMode: true,
+ 
+  slidesPerView: 1,
+  spaceBetween: 20,
+});
+
+
 $(".swiper-loop").hover(function () {
   (this).swiper.autoplay.stop();
 }, function () {

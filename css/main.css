@@ -885,21 +885,6 @@ footer .navbar {
   border-bottom: 1px solid #5e5e5e;
 }
 
-.filter-button:hover {
-  font-size: 18px;
-  border: 1px solid #42B32F;
-  border-radius: 5px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #42B32F;
-
-}
-
-.btn-default:active .filter-button:active {
-  background-color: #42B32F;
-  color: white;
-}
-
 .port-image {
   width: 100%;
 }
@@ -922,28 +907,6 @@ footer .navbar {
   width: 100%;
 } */
 
-.filter-button {
-  font-size: 18px;
-  border: 1px solid #c6412a;
-  border-radius: 5px;
-  text-align: center;
-  color: #c6412a;
-  background-color: transparent;
-  /* margin-bottom: 30px; */
-  padding: 7px 40px;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-weight: 500;
-  position: relative;
-
-}
-
-.filter-active,
-.filter-button:hover {
-  background: #c6412a;
-  border-color: #c6412a;
-  color: #fff;
-}
 
 .images-list {
   margin: 0;
@@ -1073,4 +1036,67 @@ padding: 15px;
   -webkit-transform: translateY(-13.5px) rotate(40.5deg);
   -ms-transform: translateY(-13.5px) rotate(40.5deg);
   transform: translateY(-13.5px) rotate(40.5deg);
+}
+
+.photo-frame {
+  width: 110%;
+  height: 600px;
+  background: url(../images/photo-frame.png) center no-repeat;
+  background-size: contain;
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.photo-frame .object {
+  width: 350px;
+    margin: auto;
+    display: block;
+    /* padding-left: 2px; */
+    position: relative;
+    left: 3px;
+    height: 527px;
+    border-radius: 6px;
+    object-fit: cover;
+
+   
+    box-shadow: 0px 12px 26px rgba(0, 0, 0, 0.2);
+    
+    
+
+}
+
+
+.photo-frame .object img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+.filter-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #c6400b;
+  border-radius: 50px;
+  justify-content: center;
+  padding: 4px;
+  margin:  0 10px;
+}
+.filter-list li {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.filter-list li.filter-active {
+  background-color: #c6400b;
+  color: #fff;
 }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue App</title>
+    <link rel="stylesheet" href="beeicon-font.css">
+
+   <style>
+       .iconList {
+           display: flex;
+           flex-wrap: wrap;
+       }
+       .iconList li {
+            width: 33%;
+            flex-grow: 1;
+       }
+       .iconList img {
+           width: 100%;
+           height: 100%;
+       }
+   </style>
+
+</head>
+<body>
+   
+    <main id="vueApp">
+        <ul class="iconList">
+            <ul v-for="categorie in categories">
+                <h1>{{categorie}}</h1>
+            </ul>
+
+            <li  v-for="(blog, i) in blogs" ::key="i">
+                <img :src="blog.previewImage" alt="">
+                <p > {{blog.title}}</p>
+                <p>categories  {{blog.categories}}</p>
+                
+                <ul v-for="tag in blog.tags">
+                    <li>{{tag}}</li>
+                </ul>
+                <button style="color: rgb(255, 0, 0); position: relative;"
+                 v-on:click="deletePost(blog)">Delete</button> 
+            </li>
+           
+        </ul>
+        <hr>
+      
+       
+        </section>
+       
+       
+  
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+    <script type="module">
+       
+   new Vue({
+            el: '#vueApp',
+            data: {
+              blogs: [],
+
+            categories: ['web design', 'web develope', 'wordpress'],
+             submitted: false,
+            },
+
+            
+            methods: {
+            
+                deletePost(blog) {
+                    console.log(blog.title);
+                }
+            },
+
+            created() {
+              
+                // https://md-aqil.github.io/bee-icon/selection.json
+                // https://vue-project-42d60.firebaseio.com/posts.json
+                axios
+                .get("https://vue-project-42d60.firebaseio.com/posts.json")
+                
+                .then(response => {
+                    this.blogs = response.data;
+                    console.log(this.blogs)
+                });
+                
+            },
+
+            computed: {
+               
+         },
+         
+        })
+    </script>
+    
+</body>
+</html>
