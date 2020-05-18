@@ -1086,7 +1086,7 @@ padding: 15px;
   border: 1px solid #c6400b;
   border-radius: 50px;
   justify-content: center;
-  padding: 4px;
+  padding: 2px;
   margin:  0 10px;
 }
 .filter-list li {
@@ -1099,4 +1099,19 @@ padding: 15px;
 .filter-list li.filter-active {
   background-color: #c6400b;
   color: #fff;
+}
+
+.photo-card.pdf {
+  flex-basis: 50%;
+}
+.photo-card.pdf embed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 10px 8px 0px #c6412a3b;
+  border-radius: 3px;
+  object-position: top;
+}
+.photo-card.pdf .photo-card-img {
+  height: 500px;
 }
