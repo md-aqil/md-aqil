@@ -1,3 +1,7 @@
+.photo-card-wrapper .tag {
+    word-break: break-word;
+}
+
 @media (max-width: 767px) {
     .grid-line-container {
         display: none;
@@ -272,5 +276,48 @@
     font-size: 20px;
     margin-top: 7px;
     margin-bottom: -9px;
+}
+
+.photo-frame {
+    width: 100% !important;
+    height: 500px;
+    margin-top: 0;
+}
+.photo-frame .object {
+    height: 340px;
+    width: 280px;
+}
+.photo-card.pdf {
+    flex-basis: 90% !important;
+}
+.works-menu {
+    background: #c5412a;
+    padding: 25px 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 0;
+}
+
+.works-menu .normal-heading {
+    margin:0;
+    color: #fff;
+}
+
+.filter-list li {
+    line-height: 3;
+    color: #fff;
+    border-radius: 0 !important;
+    
+}
+.filter-list {
+    padding: 0;
+    margin: 0;
+    border-radius: 0 !important;
+    justify-content: flex-start;
+}
+.filter-list li.filter-active {
+    background-color: #c6400b;
+    color: #fff;
+    border-bottom: 2px solid #fff;
 }
 }
