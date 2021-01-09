@@ -1,0 +1,101 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .hero-section {
+        height: 100%;
+    }
+    .col-md-6 img {
+        max-width: 100%;
+    }
+    .circle-art {
+        width: 360px;
+        height: 315px;
+        position: relative;
+        float: none;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-left: 48px;
+    }
+    .hero-cirle-img {
+        width: 65%;
+    position: relative;
+    top: -19px;
+    left: -8px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .hero-text * {
+        text-align: center;
+    }
+    :root {
+        --spacer-value: 40px;
+    }
+    .service-row .card {
+        margin: 0;
+    }
+    .service-row .card .card-link {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+    .cta h1 {
+        font-size: 30px;
+      
+    }
+    .cta {
+        background-size: cover;
+    }
+    #portfolio li {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-box {
+        margin-bottom: 15px;
+        height: 215px;
+    }
+    .contact-form {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .testimonial-section .user-saying {
+        width: 100%;
+    }
+    .testi-user-img {
+        width: 100%;
+    }
+    .testimonial-section .quote {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .testimonial-section {
+        display: block;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 200px;
+        height: 280px;
+    }
+    .scroll-menu {
+        display: flex;
+    }
+    .fixed-navigator {
+        width: 96%;
+        left: 0;
+        z-index: 100;
+        height: 58px;
+        bottom: 5px;
+        top: inherit;
+        padding-top: 6px;
+    }
+   .nav-absolute #navbarNav {
+       background: var(--theme-color);
+   }
+   .navbar-light .navbar-toggler {
+    background: var(--theme-color1);
+    border: none;
+}
+
+.user-saying .testimonial>.swiper-pagination-bullets {
+    display: none;
+}
+}

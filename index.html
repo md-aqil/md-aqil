@@ -1,621 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta name="language" content="en">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Aqil</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css'>
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/image-effect.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/text-effect.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" href="css/mobile.css">
-	<link rel="stylesheet" href="css/splitting.css">
-	<link rel="stylesheet" href="css/mobile.css">
-	<link rel="stylesheet" href="css/master.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/beeicon-font.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/starter.css">
+	<link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/splitting.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
 </head>
-
-
 <body>
-  <svg class="hidden">
-    <symbol id="icon-arrow" viewBox="0 0 24 24">
-      <title>arrow</title>
-      <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
-    </symbol>
-    <symbol id="icon-drop" viewBox="0 0 24 24">
-      <title>drop</title>
-      <path
-        d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
-      <path
-        d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
-    </symbol>
-    <svg id="icon-github" viewBox="0 0 33 33">
-      <title>github</title>
-      <path
-        d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29">
-      </path>
-    </svg>
-
-    <symbol id="icon-cross" viewBox="0 0 24 23">
-      <title>cross</title>
-      <path
-        d="M23.865 3.677c.197-.383.164-.818-.008-1.18.048-.41-.06-.827-.448-1.147L22.323.457c-.636-.524-1.632-.689-2.25 0a155.348 155.348 0 0 1-8.797 9.001C9.011 7.342 6.72 5.255 4.443 3.165c-.8-.734-1.956-.503-2.458.37C1.253 3.9.659 4.374.168 5.182c-.233.386-.215.872 0 1.258 1.47 2.635 4.31 4.951 6.646 7.083-.313.28-.623.562-.942.836-3.146 2.702-5.268 4.416-1.331 7.187.053.037.107.029.161.05.076.036.148.06.232.074.026 0 .05.005.075.003.082.007.16.027.243.011 2.117-.415 4.085-2.074 5.872-3.9 1.74 1.715 3.592 3.353 5.63 4.325.485.232 1.063.097 1.436-.227.626.047 1.197-.342 1.484-.901.042-.026.07-.041.116-.07.91-.569.993-1.701.32-2.482-1.522-1.762-3.138-3.438-4.787-5.084 2.968-2.9 6.674-6.027 8.542-9.667z" />
-    </symbol>
-  </svg>
-  
-  <div class="grid-line-container ">
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-    <div class="grid-line"></div>
-  </div>
-	<div class="swiper-container swiper-men">
-      <div class="swiper-wrapper">
-        <!-- <div class="swiper-slide menu">Menu slide</div> -->
-        <section class="swiper-slide">
-          <!-- <div class="menu-button">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div> -->
-         
-            <main class="main-hero spacer-bottom">
-              <div class="container">
-          
-                <nav class="navbar">
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Download Resume</a></li>
-                  </ul>
-                </nav>
-                <div class="flex-box">
-                  <div class="flex-item" style="flex-basis: 50%">
-                    <h1 class="word oswald"  data-scroll data-text="Hello!," shadow-line>
-                      Hello!,
-                    </h1>
-                 
-                    <h1 class="top-title fade-in oswald"  data-scroll="in">
-                     My Name is <span class="theme-text"> Aqil</span> Basically, I'm just a male human being
-                    </h1>
-                    <p class="oswald reveal-text theme-text"  data-scroll style="font-size: 25px;margin:0">A UI/UX Designer / Developer</p>
-          
-                
+  <main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <div class="">
+        <div class="hero-section" id="home">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                    <a class="navbar-brand mr-lg-5" href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link page" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link page" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link page" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link page" href="#portfolio">Works</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link page" href="#blogs">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link page" href="#contact">Contact</a>
+                        </li>
+                      
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="row hero-content-row">
+                      <div class="col-md-6">
+                          <div class="hero-text">
+                              <h2 class="welcome">Hello!,</h2>
+                              <h2 class="intro">I’m Aqil</h2>
+                              <h2 class="what-do typetext">A ‘Graphic’ Designer</h2>
+                              <a href="cv.html" target="_blank" class="btn-shine reveal-text mt-4" data-scroll>
+                                <span>Download CV</span>
+                          </a>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <!-- <img src="./img/about-me-img.png" alt=""> -->
+                          <div class="circle-art">
+                            <img class="abt-frame" src="img/frame/about-me-img.png" alt="">
+                            <img class="spin hero-cirle-img" src="img/frame/img-circle.png" alt="">
+                          </div>
+                      </div>
                   </div>
-                  <div class="flex-item" style="flex-basis: 50%;text-align: center;">
-                    <img width="270" src="images/char1.svg" alt="">
+            </div>
+          <img class="hero-art"  style="opacity: .3;" src="img/hero-art.png" alt="">
+        </div>
+    </div>
+    
+    <div class="container spacer" id="about">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="title">About Me</h2>
+                <h3 class="subtitle theme-text">Professional Web Designer 
+                    And Graphic Designer animator</h3>
+                    <img class="line reveal-text" data-scroll="" src="img/Path 115.svg" alt="">
+                    <p class="paragraph">
+                      Computers have been my passion from ever. I could spend hours learning about coding and designing. However, this passion got wings when I grabbed a job as a UI/UX designer and developer. Though money cannot be totally ignored, even if it wasn’t there, I couldn’t be separated from designing and coding. I think I can totally relate to how
+                    </p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/about-me-d.png" alt="">
+            </div>
+        </div>
+    </div>
+      
+    <div class="container spacer" id="services">
+        <div class="text-center width100">
+                <h2 class="title">What i do</h2>
+                <img class="line reveal-text" data-scroll src="img/Path 115.svg" alt="">
+                <p class="paragraph text-center">
+                  I'm Fluent with html css JavaScript jQuery BootStrap Wordpress Continue to Learn View JS (Framework)
+                </p>
+                <p>
+                  I also Contribute and share on <b><a class="theme-text" href="https://codepen.io/md-aqil">Codepen</a></b>
+                </p>
+            </div>
+            
+        <div class="row service-row mt-5">
+            <div class="col-md-3 fade-in" data-scroll="in">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="bee-icon-website-design-symbol fill_color"></i>
+                      <h5 class="card-title">Web Designing</h5>
+                      <p class="paragraph">Web, Mockup, Flyer, PPT Presentation Email Design,
+                         Video Editing</p>
+                      <!-- <a href="#" class="card-link">Read More</a> -->
+                      
                     </div>
                   </div>
-                </div>
-              </div>
-            </main>
-            
-            <div class="container spacer">
-              <div class="flex-box">
-                 
-                <div class="flex-item fade-in"  data-scroll="in">
-                  <img width="80%" src="images/char2.png" alt="">
-                </div>
-                <div class="flex-item">
-                  <h1 class="normal-heading oswald work">I'M FRONT-END DEVELOPER</h1>
-                  <p>
-                    I'm Fluent with <b  class="theme-text">html css JavaScript jQuery
-                    BootStrap Wordpress </b> Continue to Learn View JS (Framework)
-                  </p>
-                  <p>
-                    I also know how to animate things on web In case you wonder,<br>
-                    I use these powerful weapons called <b class="theme-text">greenshock js, Crazy Talk and After Effect</b> 
-                  </p>
-                  <p>
-                    I also Contribute and share on <b><a  class="theme-text" href="https://codepen.io/md-aqil">Codepen</a></b>
-                  </p>
-                </div>
-             
-              </div>
             </div>
-            <div class="container spacer">
-              <div class="flex-box">
-               
-                <div class="flex-item">
-                  <h1 class="normal-heading oswald work">I'M ALSO A WEB & GRAPHIC DESIGNER</h1>
-                  <p>
-                  And aside websites, icons and colors, I llike to play with lettering and Illustration 
-                  </p>
-                  <p>
-                    In case your wonder I use these beautiful weapons called <b class="theme-text">Photoshop, Illustrator, Adobe Xd, Figma</b>
-                  </p>
-                  
-                </div>
-                <div class="flex-item" style="text-align: right;">
-                  <img width="80%" src="images/char3.png" alt="">
-                </div>
-              
-              </div>
+            <div class="col-md-3 fade-in delay_1" data-scroll="in">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="bee-icon-code fill_color"></i>
+                      <h5 class="card-title">Development </h5>
+                      <p class="paragraph">PSD, FIGMA, XD To HTML, Wordpress, Ecommerce</p>
+                      <!-- <a href="#" class="card-link">Read More</a> -->
+                    </div>
+                  </div>
             </div>
-          
-  <section class="container">
-     
-
-    <div class="row">
-        <div class="works-menu">
-          <div class="fade-in" data-scroll>
-            <h1 class="normal-heading text-center oswald work">Works</h1>
+            <div class="col-md-3 fade-in delay_2" data-scroll="in">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="bee-icon-coffee-cup-f fill_color"></i>
+                    
+                      <h5 class="card-title">Web Animation</h5>
+                      <p class="paragraph">Using GreenSock, Crazytalk, After Effect, that's brings life to Desing </p>
+                      <!-- <a href="#" class="card-link">Read More</a> -->
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 fade-in delay_3" data-scroll="in">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="bee-icon-Stationary fill_color"></i>
+                      <h5 class="card-title">Wordpress Custome Developement</h5>
+                      <p class="paragraph">Use Custom Design, Fields Filters </p>
+                      <!-- <a href="#" class="card-link">Read More</a> -->
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 fade-in delay_4" data-scroll="in">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="bee-icon-megaphone2 fill_color"></i>
+                      <h5 class="card-title">Flyer, PPT Presentation Emailer Design</h5>
+                      <p class="paragraph">We have the system, to help you to choose your </p>
+                      <a href="#" class="card-link">Read More</a>
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 fade-in delay_5" data-scroll="in">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="bee-icon-shop fill_color"></i>
+                      <h5 class="card-title">Ecommerce
+                        Development </h5>
+                      <p class="paragraph">Use Wordpress Woocommerce</p>
+                      <!-- <a href="#" class="card-link">Read More</a> -->
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 fade-in delay_6" data-scroll="in">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="bee-icon-mobile fill_color"></i>
+                      <h5 class="card-title">100% Responsive </h5>
+                      <p class="paragraph">Webiste look Amazing on Every Devices</p>
+                      <a href="#" class="card-link">Read More</a>
+                      
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 fade-in delay_7" data-scroll="in">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="bee-icon-stack fill_color"></i>
+                      <h5 class="card-title">Clean Code </h5>
+                      <p class="paragraph">Code is very clean and easy to understand and customize</p>
+                      <a href="#" class="card-link">Read More</a>
+                      
+                    </div>
+                  </div>
+            </div>
         </div>
-        
-            <ul class="filter-list button-scroll">
-              <li class=" filter-button filter-active" data-filter="all">All</li>
-              <li class=" filter-button" data-filter="Webiste-uiux">Webiste UI/UX</li>
-              <li class=" filter-button" data-filter="Wordpress">Develope & Design (Wordpress)</li>
-              <li class=" filter-button" data-filter="android-uiux">Android UI/UX</li>
-              <li class=" filter-button" data-filter="brochure">Brochure</li>
-    
-            </ul>
-        </div>
-      <br />
-      <main class="gallery" id="gallery">
-
-        <div class="gallery_product filter Webiste-uiux">
-          <article class="photo-card-wrapper">
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="images/work/edunuts.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="http://edunuts.com/" target="_blank">
-                <h4>Edunuts</h4>
-              </a>
-
-              <a href="http://edunuts.com/" target="_blank">View More</a>
-            </div>
-            
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/edu.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="https://www.coworly.com/" target="_blank">
-                <h4>Coworly</h4>
-              </a>
-
-              <a href="https://www.coworly.com/" target="_blank">View More</a>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/girl.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="http://bigly.io/" target="_blank">
-                <h4>Bigly</h4>
-              </a>
-
-              <a href="http://bigly.io/" target="_blank">View More</a>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/dyt2.png" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="https://doyourthng.com/" target="_blank">
-                <h4>DYT ONLINE</h4>
-              </a>
-
-              <a href="https://doyourthng.com/" target="_blank">View More</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/bigradar.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="https://www.bigradar.io/" target="_blank">
-                <h4>BigRadar</h4>
-              </a>
-
-              <a href="https://www.bigradar.io/" target="_blank">View More</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/gems-rudra.jpg" alt="">
-                <span class="tag">HTML,CSS,JS</span>
-              </div>
-              <a href="products/gemsrudra.html">
-                <h4>Gems Rudra</h4>
-              </a>
-
-              <a href="products/gemsrudra.html">View More</a>
-            </div>
-            
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/Spa.png" alt="">
-                <span class="tag">Adobe Xd, Web Design</span>
-              </div>
-              <a href="products/spa.html">
-                <h4>Spa Saloon</h4>
-              </a>
-
-              <a href="products/spa.html">View More</a>
-            </div>
-            
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/seo-street.jpg" alt="">
-                <span class="tag">HTML,CSS,JS</span>
-              </div>
-              <a href="https://www.seostreet.in/business/home/" target="_blank">
-                <h4>SEO Street</h4>
-              </a>
-
-              <a href="https://www.seostreet.in" target="_blank">Visit Site</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="images/work/edunuts.jpg" alt="">
-                <span class="tag">HTML</span>
-              </div>
-              <a href="http://edunuts.com/" target="_blank">
-                <h4>Edunuts</h4>
-              </a>
-
-              <a href="http://edunuts.com/" target="_blank">View More</a>
-            </div>
-          </article>
-        </div>
-
-
-        <div class="gallery_product filter Wordpress">
-          <article class="photo-card-wrapper">
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/wizard.png" alt="">
-                <span class="tag">Wordpress,HTML,CSS,PHP</span>
-              </div>
-              <a href="http://demo.wipl.co.in/wizard-home/" target="_balnk">
-                <h4>Wizard Infoways</h4>
-              </a>
-
-              <a href="http://demo.wipl.co.in/wizard-home/" target="_blank">View More</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/anteelo.png" alt="">
-                <span class="tag">Wordpress,HTML,CSS,PHP</span>
-              </div>
-              <a href="https://anteelo.com/" target="_balnk">
-                <h4>Anteelo</h4>
-              </a>
-
-              <a href="https://anteelo.com/" target="_blank">View More</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/convatto.png" alt="">
-                <span class="tag">Wordpress,HTML,CSS,PHP</span>
-              </div>
-              <a href="http://convatto.com/" target="_balnk">
-                <h4>Convatto</h4>
-              </a>
-
-              <a href="http://convatto.com/" target="_blank">View More</a>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/importikaah (2).jpg" alt="">
-                <span class="tag">Wordpress,HTML,CSS,PHP</span>
-              </div>
-              <a href="https://importikaah.com/" target="_balnk">
-                <h4>Importikaah.com</h4>
-              </a>
-
-              <a href="https://importikaah.com/" target="_blank">View More</a>
-            </div>
-
-
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/tpm.png" alt="">
-                <span class="tag">Wordpress,HTML,CSS,PHP</span>
-              </div>
-              <a href="http://tpm.in/" target="_balnk">
-                <h4>TPM</h4>
-              </a>
-
-              <a href="http://tpm.in/" target="_blank">View More</a>
-            </div>
-
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/man-cutting-hair-1319462.jpg" alt="">
-                <span class="tag">Wordpress</span>
-              </div>
-              <a href="http://delhihairfixing.com/" target="_balnk">
-                <h4>Delhi Hair Fixing</h4>
-              </a>
-
-              <p>
-                Delhi Hair Fixing, fix all king of hair problems
-              </p>
-              <a href="http://delhihairfixing.com/" target="_blank">View More</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/aura.jpg" alt="">
-                <span class="tag">Wordpress</span>
-              </div>
-              <a href="http://aurakidsboss.co.in/" target="_blank">
-                <h4>Aurakidsboss</h4>
-              </a>
-              <p>
-                A clothting Company
-              </p>
-              <a href="http://aurakidsboss.co.in/" target="_blank">Visit Site</a>
-            </div>
-            
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img src="images/work/tychr.png" alt="">
-                <span class="tag">Wordpress, CSS , Design</span>
-              </div>
-              <a href="https://www.tychr.com/" target="_blank">
-                <h4>Tychr</h4>
-              </a>
-              <p>
-                Education
-              </p>
-              <a href="https://www.tychr.com/" target="_blank">Visit Site</a>
-            </div>
-            
-          </article>
-          
-        </div>
-
-        <div class="gallery_product filter android-uiux">
-          <article class="photo-card-wrapper ">
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="products/cab-img/01-Login.png" alt="">
-                <span class="tag">UI/UX Android</span>
-              </div>
-              <a href="products/cab.html" target="_blank">
-                <h4>Cab Rides</h4>
-              </a>
-
-              <a href="products/cab.html" target="_blank">View More</a>
-            </div>
-
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="products/flaxi-spaces/Home-Notificaton.png" alt="">
-                <span class="tag">UI/UX Android</span>
-              </div>
-              <a href="products/flaxi-space.html" target="_blank">
-                <h4>Flaxi Spaces</h4>
-              </a>
-              <a href="products/flaxi-space.html" target="_blank">View More</a>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="products/bigly/Home.png" alt="">
-                <span class="tag">UI/UX Android</span>
-              </div>
-              <a href="products/bigly.html" target="_blank">
-                <h4>Bigly.io</h4>
-              </a>
-
-              <a href="products/bigly.html" target="_blank">View More</a>
-            </div>
-            <div class="photo-card">
-              <div class="photo-card-img">
-                <img class="" src="products/Practices/020_signup.png" alt="">
-                <span class="tag">UI/UX Android</span>
-              </div>
-              <a href="products/practices.html" target="_blank">
-                <h4>Practices</h4>
-              </a>
-
-              <a href="products/practices.html" target="_blank">View More</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="gallery_product filter brochure">
-          <article class="photo-card-wrapper ">
-            <div class="photo-card pdf">
-              <div class="photo-card-img">
-
-                <embed src="products/brochures/wizard01.pdf"
-                type="application/pdf">
-
-                <span class="tag">PDF</span>
-              </div>
-              <a href="products/cab.html" target="_blank">
-                <h4>Wizard Capability Statement</h4>
-              </a>
-
-              <a href="products/brochures/wizard01.pdf" target="_blank">View More</a>
-            </div>
-
-
-          </article>
-        </div>
-      </main>
-  </section>
-
-          </section> <!-- swiper-slide -->
-        </div> 
     </div>
     
+ <div class="add-bg">
+  <div class="container spacer" id="portfolio">
+    <div class="text-center">
+      <h2 class="title text-white">Explore Works</h2>
+      <img class="line reveal-text" data-scroll src="img/Path 115.svg" alt="">
+    
+    </div>
+ 
+    <div class="row blog-cards mt-lg-5">
+      <div class="col-md-4">
+        <div class="card glass fade-in" data-scroll="in">
+          <img class="card-img" src="work/tychr.png" alt="Card image cap">
+          <span class="tag text-white">jan 12, 2020</span>
+          <div class="card-body">
+            <h5 class="card-title text-white">Tychr</h5>
+            <p class="paragraph text-white">
+              At Tychr, we focus on enhancing creative and intellectual faculties of students,
+            </p>
+            <a href="https://www.tychr.com/"  class="theme-text">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card glass fade-in delay_2" data-scroll="in">
+          <img class="card-img" src="work/aim.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">aimprodexgroup</h5>
+            <p class="paragraph">
+              Aimprodex is a platform to raise crowdfunds for your project, or you can invest in interesting projects.
+            </p>
+            <a href="https://aimprodexgroup.com/"  class="theme-text">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card glass fade-in delay_3" data-scroll="in">
+          <img class="card-img" src="work/career.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Career Talks</h5>
+            <p class="paragraph">
+              Career Talks is one of the best and trusted Educational Consultancy in India.
+            </p>
+            <a href="http://career-talks.in/"  class="theme-text">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="works.html" target="_blank" class="btn-shine reveal-text mt-4" data-scroll>
+        <span>More Works</span>
+  </a>
+    </div>
+   
+  </div>
+ </div>
   
-  <section class="container spacer">
-    <div class="about-wraper">
-      <div class="about-col">
-        <div class="about-quote spacer-top">
-          Computers have been my passion from ever. I could spend hours learning about coding and designing. However,
-          this
-          passion got wings when I grabbed a job as a UI/UX designer and developer. Though money cannot be totally
-          ignored,
-          even if it wasn’t there, I couldn’t be separated from designing and coding. I think I can totally relate to
-          how
+       
+    </div>
+      </div>
+     
+      
+      <section class="spacer" id="testimonials">
+     
+        <div class="testimonial-section">
+            <div class="testi-user-img">
+            <div class="swiper-container gallery-thumbs">
+                  <div class="swiper-wrapper">
+                 
+                  <div class="swiper-slide">
+                  <img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+                  </div>
+                  
+                  </div>
+              </div>
+            </div>
+            
+            <div class="user-saying bg-gray">
+         
+                  <div class="swiper-container testimonial">
+                          <!-- Additional required wrapper -->
+                          <div class="swiper-wrapper ">
+                              <!-- Slides -->
+                              <div class="swiper-slide">
+                                  <div class="quote ">
+                                          <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+                                      <p>
+                                              “This is best and biggest unified platform
+                                      for instant online admission. We can easily
+                                      take admission for any course in any institute..“
+                                      </p>
+                                      <div class="name">-Ramkishor Verma-</div>
+                                      <div class="designation">University Student</div>
+                                      
+                                  </div>
+                              </div>
+                          
+                          </div>
+                          <!-- If we need pagination -->
+                          <div class="swiper-pagination swiper-pagination-white"></div>
+                      
+                      </div>
+            </div>
         </div>
-        <div>
-          <nav class="navbar" style="justify-content: flex-start;margin-bottom:20px;margin-left: -15px;">
-            <ul>
-              <li><a href="">
-                  <img src="images/icons/facebook-logo.svg" alt="">
-                </a></li>
-              <li><a href="">
-                  <img style="width: 38px;height: 38px" src="images/icons/github-logo.svg" alt="">
-                </a></li>
-              <li><a href="">
-                  <img src="images/icons/linkedin.svg" alt="">
-                </a></li>
-              <li><a href="">
-                  <img src="images/icons/codepen.svg" alt="">
-                </a></li>
-            </ul>
-            <ul>
-              <li><a href="">7210562014</a></li>
-              <li><a href="">aqilali381@gmail.com</a></li>
-            </ul>
-
-          </nav>
+    </section>
+  
+   
+    <div class="grade-box" id="contact">
+      <div class="cta">
+        <div class="text-center fade-in-top" data-scroll="in">
+          <h1>I Am Available For Freelancer.</h1>
+          <p class="lead text-white mt-lg-4">Apparently we had reached  a great height in the atmosphere</p>
+          <a href="cv.html" class="btn-shine reveal-text mt-4" data-scroll><span>Hire Me</span></a>
         </div>
-        <div class="swiper-container swiper-loop" style="height: auto;">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="images/tech/html-5.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="images/tech/css-filetype-100.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="images/tech/sass-96.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="images/tech/javascript-100.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="images/tech/jquery-100.png" alt="jQuery">
-            </div>
-            <div class="swiper-slide">
-              <img src="images/tech/github-90.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="images/tech/photoshop-96.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="images/tech/adobe-xd-96.png" alt="">
+      </div>
+     
+      <div class="container spacer">
+        <div class="text-center width100">
+          <h2 class="title text-white">Contact Us</h2>
+          <p class="paragraph text-center text-white">
+            easiest way to reach Me
+          </p>
+      </div>
+      
+      <div class="row mt-lg-5">
+        <div class="col-md-4">
+          <div class="contact-box glass fade-in-top delay_1" data-scroll="in">
+            <i class="bee-icon-phone curve-box mb-4"></i>
+            <h3 class="text-white">Call Me On</h3>
+            <a href="" class="text-white">7210562014</a>
+           </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-box glass fade-in-top delay_2" data-scroll="in">
+            <i class="bee-icon-email-o curve-box mb-4"></i>
+            <h3 class="text-white">Email Me At</h3>
+            <a href="" class="text-white">aqilali381@gmail.com</a>
+           </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-box glass fade-in-top delay_3" data-scroll="in">
+            <i class="bee-icon-map-marker-f curve-box mb-4"></i>
+            <h3 class="text-white">Visit Me</h3>
+            <a href="" class="text-white">Paharganj New Delhi, India</a>
+           </div>
+        </div>
+      
+      </div>
+      </div>
+      <div class="container">
+      <img src="img/skill.svg" alt="">
+      </div>
+      <div class="container z-index-1 mt-lg-5 mb-5">
+        <div class="row ">
+          <div class="col-md-3">
+            <a href="index.html">
+              <img src="img/logo-white.png" alt="">
+            </a>
+           
+            <ul class="f-list">
+              <li><a href="">+91 7210562014</a></li>
+              <li><a href="">aqilali381@gmai.com</a></li>
+              <li><a href=""><small>Video by cottonbro from Pexels</small></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4 class="h4-title">MENU</h4>
+            <ul class="f-list">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">client</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-6">
+            <h4>&nbsp;</h4>
+            <ul class="f-list">
+              <li><a href="works.html">Works</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h4-title">SUBSCRIBE</h4>
+            
+            <div class="input-group mb-3 subscribe">
+              <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+              <div class="input-group-prepend">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
             </div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+        
         </div>
-
+        <hr class="mt-md-5">
       </div>
-      <div class="about-col reveal-text left" data-scroll>
-        <img class="about-img  mm"  src="images/work/photo-of-person-using-laptop-3747397.jpg" alt="">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bee-icon-facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bee-icon-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class=" bee-icon-github"></i></a>
+              </li>
+             
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-300" href="#">copyrite@2020 Md Aqil</a>
+              </li>
+            </ul>
+           
+          </div>
+        </nav>
       </div>
-    </div>
-
-
-  </section>
-
-
-
-  <section class="container">
-    <div class="svg-skill-chart">
+      <footer class="footer">
+        <img class="hero-art" src="img/hero-art.png" alt="">
+      </footer>
+  
+    </main> 
     
-      <h1 class="normal-heading oswald work text-center">Overall Skills</h1>
-      <img src="images/skill.svg" alt="">
-    </div>
-  </section>
-
-
-  <footer>
-    <div class="container flex-box">
-
-
-      <nav class="navbar">
-        <ul>
-          <li><a href="">
-              <img src="images/icons/facebook-logo.svg" alt="">
-            </a></li>
-          <li><a href="">
-              <img style="width: 38px;height: 38px" src="images/icons/github-logo.svg" alt="">
-            </a></li>
-          <li><a href="">
-              <img src="images/icons/linkedin.svg" alt="">
-            </a></li>
-          <li><a href="">
-              <img src="images/icons/codepen.svg" alt="">
-            </a></li>
-        </ul>
-        <ul>
-          <li><a href="">Work</a></li>
-          <li><a href="">Resume</a></li>
-          <li><a href="">(aqilali381@gmail.com</a>)</li>
-        </ul>
-      </nav>
-
-    </div>
-
-  </footer>
-	
-
-
-
-  <!-- javascript -->
-  <script src="js/jQuery.min.js"></script>
-  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-  <script src="js/jQuery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <nav id="navbar-example2" class="fixed-navigator sticky-header">
+      <ul class="scroll-menu">
+        <li><a class="nav-link page" href="#home"><i class="bee-icon-home"></i></a></li>
+          <li> <a class="nav-link page " href="#about"><i class="bee-icon-user"></i></a></li>
+          <li><a class="nav-link page" href="#services"><i class="bee-icon-web-domain"></i></a></li>
+          <li><a class="nav-link page " href="#portfolio"><i class="bee-icon-categories"></i></a></li>
+          <li><a class="nav-link page" href="#testimonials"><i class="bee-icon-businessman"></i></a></li>
+          <li><a class="nav-link page" href="#contact"><i class="bee-icon-india-map"></i></a></li>
+      </ul>
+    
+    </nav>
+    
+   
+  
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/micromodal.min.js"></script>
 	<script src="js/scroll-out.js"></script>
-	<script src="js/swiper.min.js"></script>
 	<script src="js/splitting.js"></script>
-  <script src="js/controller.js"> </script>
-  <script>
-    let spans = document.querySelectorAll('.word span');
-    spans.forEach((span, idx) => {
-      span.addEventListener('click', (e) => {
-        e.target.classList.add('active');
-      });
-      span.addEventListener('animationend', (e) => {
-        e.target.classList.remove('active');
-      });
-
-      // Initial animation
-      setTimeout(() => {
-        span.classList.add('active');
-      }, 750 * (idx + 1))
-    });
-  </script>
-
-
+	<script src="js/swiper.js"></script>
+	<script src="js/controller.js"></script>
 
 </body>
-
 </html>
