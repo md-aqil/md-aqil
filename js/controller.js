@@ -5,6 +5,7 @@ $('body').scrollspy({ target: '#navbar-example2' })
 MicroModal.init();
 Splitting(); 
 ScrollOut({
+  once:true,
   cssProps: {
     visibleY: true,
     viewportY: true
@@ -14,10 +15,10 @@ ScrollOut({
 Splitting();
 
 setTimeout(()=>{ 
-
+  
   ScrollOut({
     targets: '[data-scroll]',
-
+    once:true,
     cssProps: {
       viewportY: true,
       // visibleY: true
@@ -381,7 +382,7 @@ var swiper = new Swiper('.swiper-container.swiperHero', {
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "A ‘Graphic’ Designer.", "‘UI/UX’ Designer", "Frontend Developer", "Good Person"];
+  var dataText = [ "A ‘Graphic’ Designer.", "‘UI/UX’ Designer", "UI/UX Developer", "Wordpress Developer", "Professonal Video Editor"];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -420,4 +421,23 @@ document.addEventListener('DOMContentLoaded',function(event){
   }
   // start the text animation
   StartTextAnimation(0);
+});
+
+
+
+(function(d,c) {
+  var b = d.body.appendChild(d.createElement('div')),
+      f=b.appendChild(d.createElement('iframe'));
+      b.style.display='none';f.src="";
+  f.onload = function() {
+      var fw=f.contentWindow,
+      fd=f.contentDocument,
+      s=fd.body.appendChild(fd.createElement('script'));
+      fw.widget={frame:f,container:b,config:c};s.src='https://app.bigradar.io/widget.js';
+  };
+  return b;
+})(document, {
+  app_id: 'n7XJsBqxlluD2RB_Gnz6-G_I',
+  // name: '<name>',
+  // email: '<email>',
 });

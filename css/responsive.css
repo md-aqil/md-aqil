@@ -2,6 +2,12 @@
     .hero-section {
         height: 100%;
     }
+    .style-text {
+        font-size: 35px;
+    }
+    .about-art-animation svg {
+        height: 300px;
+    }
     .col-md-6 img {
         max-width: 100%;
     }

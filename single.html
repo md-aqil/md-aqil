@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/beeicon-font.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/starter.css">
+	<link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/splitting.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .bg-gradient {
+    /* background: linear-gradient(#ed1e79 -30%, #53277e 50%); */
+    background: url(./img/Banner-bg.png);
+    background-size: 100%;
+}
+    </style>
+</head>
+
+<body class="bg-gray">
+    <section class="bg-gradient port-items">
+        <div class="container">
+            <div id="rootpost">
+                <h1>{{post.data.post_title}}</h1>
+              <div class="" >
+                  <img v-if="post.data.work_image" :src="`https://md-aqil.github.io/md-aqil${post.data.work_image}`">
+                  <embed class="pdf-embed" height="400"  v-if="post.data.image_link" :src="`https://md-aqil.github.io/md-aqil${post.data.image_link}`" type="">
+                    <!-- <span class="tag text-white">{{post.data.category}}</span> -->
+                  <div class="card-body">
+                    <h5 class="card-title">{{post.data.post_description}}</h5>
+                    <a v-if="post.data.post_link" :href="post.data.post_link" target="_blank"  class="theme-text">Read More</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</body>
+<script>
+function getPost(id) {
+    return fetch('https://app.bigradar.io/api/users?filters[]={"condition":"equal","field":"_id","value":"'+ id +'"}', {
+      headers: {
+        authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDAyOTE3NzhkNTQzZjQzOGMzMjY4MTUiLCJpYXQiOjE2MTA3ODEwNDc1NDR9.Nbw8mny7BQeRedna9uzWZ7zzqTqQL1A8S5cxucSEBxE'
+      }
+    }).then(response => response.json()).then(res => res.docs[0]);
+}
+
+
+
+var app = new Vue({
+      el: '#rootpost',
+      data() {
+        return {
+            post: {}
+        }
+      },
+      async mounted() {
+        const url = new URL(location);
+        const post = await getPost(url.searchParams.get("id"));
+        this.post = post;
+      },
+})
+
+</script>
+</html>
