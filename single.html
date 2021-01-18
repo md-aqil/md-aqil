@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Aqil-Work</title>
     <link rel="stylesheet" href="css/beeicon-font.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/starter.css">
@@ -17,30 +17,133 @@
     background: url(./img/Banner-bg.png);
     background-size: 100%;
 }
+.full-work-preview {
+    width: 100%;
+}
+.single-logo {
+    display: block;
+    text-align: center;
+   padding: 40px 0;
+}
     </style>
 </head>
 
 <body class="bg-gray">
     <section class="bg-gradient port-items">
+        <a href="index.html"  class="single-logo ">
+            <div class="">
+                <img src="img/logo-white.png" alt="">
+            </div>
+          
+        </a>
+       
         <div class="container">
             <div id="rootpost">
-                <h1>{{post.data.post_title}}</h1>
-              <div class="" >
-                  <img v-if="post.data.work_image" :src="`https://md-aqil.github.io/md-aqil${post.data.work_image}`">
-                  <embed class="pdf-embed" height="400"  v-if="post.data.image_link" :src="`https://md-aqil.github.io/md-aqil${post.data.image_link}`" type="">
+                <h1 class="text-center text-white display-2 mb-lg-5">{{post.data.post_title}}</h1>
+                <p class="text-white lead">{{post.data.post_description}}</p>
+              <div class="glass card">
+                  <img class="full-work-preview" v-if="post.data.work_image" :src="`https://md-aqil.github.io/md-aqil${post.data.work_image}`">
+                  <embed class="pdf-embed" style="height: 90vh;" v-if="post.data.image_link" :src="`https://md-aqil.github.io/md-aqil${post.data.image_link}`" type="">
                     <!-- <span class="tag text-white">{{post.data.category}}</span> -->
-                  <div class="card-body">
-                    <h5 class="card-title">{{post.data.post_description}}</h5>
-                    <a v-if="post.data.post_link" :href="post.data.post_link" target="_blank"  class="theme-text">Read More</a>
-                  </div>
+                
                 </div>
+                <div class="spacer"></div>
             </div>
         </div>
     </section>
- 
+    <section id="footer-section">
+        <div class="container spacer">
+          <div class="text-center fade-in-top m-center" data-scroll="in">
+            <h1 class="style-text work-text">I Am Available For Freelancing.</h1>
+            <p class="lead  mt-lg-4">Feel free to contact me at <b ><a class="theme-text" href="mailto:aqilali381@gmail.com">aqilali381@gmail.com</a></b></p>
+            <a href="cv.html" class="btn-shine reveal-text mt-4" data-scroll><span>Hire Me</span></a>
+          </div>
+         </div>
+         <div class="grade-box" id="contact">
+          <div class="container spacer">
+            <div class="text-center width100">
+              <h2 class="title text-white">Contact Us</h2>
+              <p class="paragraph text-center text-white">
+                Easiest way to reach Me
+              </p>
+          </div>
+          
+          <div class="row mt-lg-5">
+            <div class="col-md-4">
+              <div class="contact-box glass fade-in-top delay_1" data-scroll="in">
+                <i class="bee-icon-phone curve-box mb-4"></i>
+                <h3 class="text-white">Call Me On</h3>
+                <a href="" class="text-white">7210562014</a>
+               </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-box glass fade-in-top delay_2" data-scroll="in">
+                <i class="bee-icon-email-o curve-box mb-4"></i>
+                <h3 class="text-white">Email Me At</h3>
+                <a href="" class="text-white">aqilali381@gmail.com</a>
+               </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-box glass fade-in-top delay_3" data-scroll="in">
+                <i class="bee-icon-map-marker-f curve-box mb-4"></i>
+                <h3 class="text-white">Visit Me</h3>
+                <a href="" class="text-white">Paharganj New Delhi, India</a>
+               </div>
+            </div>
+          
+          </div>
+          </div>
+        
+          <div class="container z-index-1 mt-lg-5 mb-5">
+              <ul class="fl-inline">
+                  <li>
+                    <a href="index.html">
+                        <img src="img/logo-white.png" alt="">
+                      </a>
+                  </li>
+                  <li><a href="tell:+917210562014">+91 7210562014</a></li>
+                  <li><a href="mailto:aqilali381@gmai.com">aqilali381@gmai.com</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="works.html">Works</a></li>
+              </ul>
+              
+          
+            <hr class="mt-md-5">
+          </div>
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bee-icon-facebook"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bee-icon-twitter"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class=" bee-icon-github"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCAZcCHjNUiZDmB8cK19FqEA"><i class="bee-icon-youtube-logo"></i></a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link fw-300" href="#">copyrite@2020 Md Aqil</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </nav>
+          </div>
+          <footer class="footer">
+            <img class="hero-art" src="img/hero-art.png" alt="">
+          </footer>
+      
+      </section>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-</body>
+
 <script>
 function getPost(id) {
     return fetch('https://app.bigradar.io/api/users?filters[]={"condition":"equal","field":"_id","value":"'+ id +'"}', {
@@ -67,4 +170,5 @@ var app = new Vue({
 })
 
 </script>
+</body>
 </html>

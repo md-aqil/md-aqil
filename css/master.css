@@ -284,7 +284,7 @@ align-items: center;
 
 
 .testimonial-section .quote {
-width: 75%;
+width: 95%;
 height: 100%;
 display: -webkit-box;
 display: -ms-flexbox;
@@ -1105,4 +1105,22 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
     flex-grow: 1;
     margin-bottom: 0;
     margin-top: 0;
+}
+.fl-inline {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.fl-inline li a {
+    color: #fff;
+    display: block;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.fl-inline li a img {
+    margin-bottom: -20px;
+    width: 100px;
 }

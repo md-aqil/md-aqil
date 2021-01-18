@@ -171,7 +171,7 @@
         <div class="container por">
           <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <a class="navbar-brand mr-lg-5" href="index.html">
-            <img src="img/logo-white.png" alt="">
+            <img width="130" src="img/logo-white-h.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -188,14 +188,12 @@
                   <a class="nav-link page" href="#wordpress">Wordpress</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link page" href="#portfolio">Portfolio</a>
+                  <a class="nav-link page" href="#brochure">Brochure</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link page" href="#blogs">Blog</a>
+                  <a class="nav-link page" href="#mobile-ui">Mobile UI</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link page" href="#contact">Contact</a>
-                </li>
+               
               </ul>
             </div>
           </nav>
@@ -873,8 +871,8 @@
               </div>
             </div>
             <div class="col-md-5">
-              <div class="fade-in-top" data-scroll="in">
-                <h1 class="style-text" style="font-size: 70px;">I Am <br>Available For Freelance. <br>Work</h1>
+              <div class="fade-in-top m-center" data-scroll="in">
+                <h1 class="style-text work-text" style="font-size: 70px;">I Am <br>Available For Freelance. <br>Work</h1>
                 <p class="lead  mt-lg-4">Feel free to contact me at <b ><a class="theme-text" href="mailto:aqilali381@gmail.com">aqilali381@gmail.com</a></b></p>
                 <a href="cv.html" class="btn-shine reveal-text mt-4" data-scroll><span>Hire Me</span></a>
               </div>
@@ -920,46 +918,17 @@
           </div>
         
           <div class="container z-index-1 mt-lg-5 mb-5">
-            <div class="row ">
-              <div class="col-md-3">
+            <ul class="fl-inline">
+              <li>
                 <a href="index.html">
-                  <img src="img/logo-white.png" alt="">
-                </a>
-               
-                <ul class="f-list">
-                  <li><a href="">+91 7210562014</a></li>
-                  <li><a href="">aqilali381@gmai.com</a></li>
-                  <li><a href=""><small>Video by cottonbro from Pexels</small></a></li>
-                </ul>
-              </div>
-              <div class="col-md-3 col-6">
-                <h4 class="h4-title">MENU</h4>
-                <ul class="f-list">
-                  <li><a href="">Home</a></li>
-                  <li><a href="">About</a></li>
-                  <li><a href="">client</a></li>
-                </ul>
-              </div>
-              <div class="col-md-2 col-6">
-                <h4>&nbsp;</h4>
-                <ul class="f-list">
-                  <li><a href="works.html">Works</a></li>
-                  <li><a href="">Blog</a></li>
-                  <li><a href="">Contact</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <h4 class="h4-title">SUBSCRIBE</h4>
-                
-                <div class="input-group mb-3 subscribe">
-                  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-                  <div class="input-group-prepend">
-                    <button class="btn btn-primary" type="button">Subscribe</button>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
+                    <img src="img/logo-white.png" alt="">
+                  </a>
+              </li>
+              <li><a href="tell:+917210562014">+91 7210562014</a></li>
+              <li><a href="mailto:aqilali381@gmai.com">aqilali381@gmai.com</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="works.html">Works</a></li>
+          </ul>
             <hr class="mt-md-5">
           </div>
           <div class="container">
@@ -1025,10 +994,10 @@
 const tl4 = gsap.timeline({
   scrollTrigger: {
     trigger: ".trigger2",
-    start: "top",
-  end: "center top",
-    scrub: true,
-    pin: ".pin",
+    start: "center",
+  end: "center",
+    // scrub: true,
+    // pin: ".pin",
     // markers: true
   }
 });
