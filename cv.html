@@ -333,7 +333,7 @@ hr { background-color: #ddd; height: 1px; border: 0; }
           </p><hr>
           <small>
             
-          November-2017 - Currently
+          November-2017 - September 2020
           </small>
         <p></p>
       </div>
@@ -347,10 +347,10 @@ hr { background-color: #ddd; height: 1px; border: 0; }
     
     <article class="flex-group">
       <div class="short">
-        <h4>bigly.io</h4>
+        <h4> Wizard Infoways</h4>
         <p>
-          Wizard Infoways
-          Address: #307A, The Ithum, A-40, Sector 62, Noida, Uttar Pradesh 201309
+         
+          #307A, The Ithum, A-40, Sector 62, Noida, Uttar Pradesh 201309
           </p><hr>
           <small>
             
@@ -361,8 +361,8 @@ hr { background-color: #ddd; height: 1px; border: 0; }
       <div class="full">
         <a href="#">UI/UX Designer & Developer </a>
         <p class="read">
-          
-        </p>
+          I had done UI Development and UI Designing in the whole website. I had used Html5, Css3, Jquery, Javascript, Animate.css, Bootstrap.css, Green shock animation to develop the website dynamically and make it most user-friendly. I had given it graphics from Adobe Photoshop and Illustrator. I had made my best efforts to make it better than something most better.     
+             </p>
       </div>
     </article>
     
@@ -371,20 +371,21 @@ hr { background-color: #ddd; height: 1px; border: 0; }
 
           <section>
           <h3 class="line-title">Project Completed</h3>
-            <article class="flex-group" id="rootpost">
+          
+          <div id="rootpost">
+            <article class="flex-group" v-for="post in posts">
                 <div class="short">
-                    <h4><a href="">Edunuts.com</a></h4>
-                    <p>UI/Design &amp; Developer</p>
+                    <h4><a :href="post.data.post_link" target="_blank">{{post.data.post_title}}</a></h4>
+                    <p>UI/Design &amp; Develop</p>
                 </div>
                 <div class="full">
-                    
                     <p class="read">
-            Edunuts is a mission to empower students, in making the best career decisions based on correct information and insights from data.     
-          </p>
-           <hr>
+                      {{post.data.post_description}}
+                  </p>
+                <hr>
                 </div>
             </article>
-            
+          </div>
       </section>
 
   
