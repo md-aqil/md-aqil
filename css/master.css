@@ -1087,6 +1087,7 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
     /* font-size: 60px; */
     z-index: 10;
     background-color: #fff;
+    position: relative;
 }
 .im-grid {
     display: grid;
