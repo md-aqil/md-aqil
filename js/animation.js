@@ -22,8 +22,8 @@ tl.from("#lapi-square", {scale:0, transformOrigin:'center', duration: 1}, .4);
 tl.from("#lapi-shadow", {scale:0, transformOrigin:'center', duration: 1}, .6);
 
 tl.from("#lapi-group", {y: -200, duration: 1, autoAlpha:0}, .9);
-tl.to("#code-shadow", {autoAlpha:1, scale:1, transformOrigin:"center center",duration: 1}, .9);
-tl.to("#lapi-code-screen", {x:-10, y:-10,z:-20,autoAlpha:1,  transformOrigin:"0% 0%"});
+tl.to("#code-shadow", {autoAlpha:1, scale:1, transformOrigin:"center center",duration: .8});
+tl.to("#lapi-code-screen", {x:-10, y:-10,z:-20,autoAlpha:1, transformOrigin:"0% 0%"}, "-=.3");
 tl.from("#Group_12344 path", {scale: 0, autoAlpha:0, duration: 1, transformOrigin:"left"});
 tl.from("#colored-line path", {scale: 0, autoAlpha:0, duration: 1, transformOrigin:"left"});
 
