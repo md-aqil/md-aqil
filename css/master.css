@@ -1130,14 +1130,15 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
     margin: 0px auto;
   margin-top: 50px;
   }
-  .swiper-full-mobile .swiper-slide.swiper-slide-active img {
-      border-radius: 20px;
+  .swiper-full-mobile .swiper-slide.swiper-slide-active {
+      /* border-radius: 20px; */
+    
   }
   
   .swiper-full-mobile:before {
     content: "";
     width: 265px;
-    background: url(http://md-aqil.github.io/images/Pixel-3-XL.png);
+    /* background: url(http://md-aqil.github.io/images/Pixel-3-XL.png); */
     /* background: url('../img/mockup.png'); */
     background-size: 100%;
     background-repeat: no-repeat;
