@@ -441,3 +441,64 @@ document.addEventListener('DOMContentLoaded',function(event){
   // name: '<name>',
   // email: '<email>',
 });
+
+var swiperMobile = new Swiper('.swiper-container.swiper-full-mobile', {
+  slidesPerView: 5,
+  spaceBetween: 50,
+  slideToClickedSlide: true,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  loop: true,
+    autoplay: {
+      delay: 1000,
+    },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 80,
+    modifier: 4,
+    slideShadows: true,
+  },
+  breakpoints: {
+   1400: {
+       slidesPerView: 5,
+       spaceBetween: 50,
+       centeredSlides: true,
+    },
+    320: {
+       slidesPerView: 1,
+       spaceBetween: 0,
+    },
+  }
+
+});
+
+
+var swiper = new Swiper('.swiper-loop', {
+  loop: true,
+  autoplay: {
+    delay: 1,
+  },
+  freeMode: true,
+  speed: 5000,
+  slidesPerView: 6,
+  spaceBetween: 0,
+});
+
+$(".swiper-loop").hover(function () {
+  (this).swiper.autoplay.stop();
+}, function () {
+  (this).swiper.autoplay.start();
+});
