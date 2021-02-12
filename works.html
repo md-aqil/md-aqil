@@ -178,9 +178,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link page" href="index.html">Home </a>
                 </li>
+                <li class="dropdown nav-item">
+                  <a href="works.html" class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Works
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="works.html">All</a>
+                    <a class="dropdown-item" href="Website-designs.html">Web Design</a>
+                    <a class="dropdown-item" href="mobile-app-design.html">Mobile App Design</a>
+                    <a class="dropdown-item" href="mobile-app-design.html">Brochures</a>
+                  </div>
+                </li>
+                
                 <li class="nav-item">
                   <a class="nav-link page" href="#html-css">HTML</a>
                 </li>
@@ -215,15 +227,11 @@
                   <div class="card glass" >
                     
                     <img class="card-img" v-if="post.avatar" :src="post.avatar">
-                    
                     <img class="card-img" v-else-if="post.data.work_image" :src="`https://md-aqil.github.io/md-aqil${post.data.work_image}`">
-                    
                     <embed class="pdf-embed"  height="400" v-else-if="post.data.image_link" :src="`https://md-aqil.github.io/md-aqil${post.data.image_link}`" type="">
-                      
                       <span class="tag text-white">{{category}}</span>
                     <div class="card-body">
                       <h5 class="card-title">{{post.data.post_title}}</h5>
-                      
                       <a v-if="post.data.post_link" :href="post.data.post_link" target="_blank"  class="theme-text">Read More</a>
                       <a v-else :href="`single.html?id=${post._id}`" target="_blank">View More</a>
                     </div>
@@ -868,8 +876,6 @@
                     </g>
                   </g>
                 </svg>
-                
-                
               </div>
             </div>
             <div class="col-md-5">
@@ -992,6 +998,23 @@
 
   <script>
     
+    var app = new Vue({
+      
+      el: '#rootpost',
+      data() {
+        return {
+            categories: [],
+            posts: {}
+        }
+      },
+      async mounted() {
+        const raw = await getPosts();
+        const [ categories, posts ] = categorize(raw.docs);
+        console.log({categories, posts});
+        this.posts = posts;
+        this.categories = categories;
+      },
+})
 
 const tl4 = gsap.timeline({
   scrollTrigger: {

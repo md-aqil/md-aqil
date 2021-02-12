@@ -972,12 +972,23 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
 .navbar-nav .nav-link:hover:not(.dropdown-toggle) {
     color: var(--theme-color1) !important;
 }
-.nav-link.dropdown-toggle {
-    background: var(--theme-color1);
-    color: #fff !important;
-    border-radius: 3px;
-    
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown .dropdown-menu{
+    margin-top: -4px;
+    border: none;
+    box-shadow: 5px 4px 16px #0000000d;
 }
+.dropdown .dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+    color: #fff;
+    background-color: var(--theme-color1);
+}
+
 #filter li.active {
     background-color: var(--theme-color1);
     color: #fff;
@@ -1133,6 +1144,10 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
   .swiper-full-mobile .swiper-slide.swiper-slide-active {
       /* border-radius: 20px; */
     
+  }
+  
+  .dropdown:hover>.dropdown-menu {
+    display: block;
   }
   
   .swiper-full-mobile:before {

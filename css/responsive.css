@@ -11,6 +11,11 @@
         flex-direction: column;
         margin-top: 50px;
     }
+    .swiper-loop {
+        margin: 40px auto;
+        width: 100%;
+    }
+    
     .product-col {
         flex-basis: 100%;
     }

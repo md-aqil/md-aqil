@@ -495,6 +495,18 @@ var swiper = new Swiper('.swiper-loop', {
   speed: 5000,
   slidesPerView: 6,
   spaceBetween: 0,
+  breakpoints: {
+    1400: {
+        slidesPerView: 7,
+        spaceBetween: 50,
+        centeredSlides: true,
+     },
+     320: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+     },
+   }
+   
 });
 
 $(".swiper-loop").hover(function () {
