@@ -1,8 +1,10 @@
-<html><head>
+<!DOCTYPE html>
+<html>
+  
+<head>
     <title>Resume</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
      <meta name="language" content="English">
         <meta charset="utf-8">
@@ -481,7 +483,6 @@ a {
   }
 body {
 margin: 0;
-
 }
 .resume-container {
   width: 100%;
@@ -492,21 +493,11 @@ margin: 0;
   margin-top: 0px;
 }
 #main {
-  
   padding-right: 0px;
   padding-left: 48px;
 }
 * {
 -webkit-print-color-adjust: exact; 
-
-}
-.helper {
-
-  margin-left: -15px;
-}
-.helper::before {
- 
-  left: -15px;
 }
 }
 
@@ -858,6 +849,28 @@ margin: 0;
               </article>
           
           </li>
+           <li>
+              <a href="" class="title">Tour My India</a>
+              <h4 class="subtitle">UI/UX designer /Developer</h4>
+              <i>From 17th Feb 2021 to Working Here</i>
+              <article>
+                  <ul class="simple-list">
+                      <h4>Main duties performed:</h4>
+                      <li>Understanding the business modal and design Layout according</li>
+                      <li>Convert concept into design</li>
+                      <li>Created UI/ UX for Mobile APPs and WEB Based applications.</li>
+                      <li>Proven UI experience with demonstrable UI design skills including a strong portfolio
+                        Excellent visual design skills with sensitivity to user-system interaction</li>
+                        <li>
+                            Created wireframes, storyboards, user flows, process flows and site maps
+                        </li>
+                        <li>Up-to-date with the latest UI trends, techniques, and technologies</li>
+                        <li> <b>Tools Using:</b> Adobe XD, <mark> Figma (My Favorate), </mark> UXPin, Protopie, Overflow, Marval, Photoshop</li>
+                        
+                  </ul>
+              </article>
+          
+          </li>
        
         </ul>
    </section>
@@ -895,9 +908,8 @@ margin: 0;
         }
       },
       async mounted() {
-        const posts = (await getPosts()).docs;
-        console.log(posts);
-        this.posts = posts;
+        // const posts = (await getPosts()).docs;
+        // this.posts = posts;
       },
 })
   
