@@ -42,15 +42,15 @@
         max-width: 100%;
     }
     .circle-art {
-        width: 360px;
+        width: 98%;
         height: 315px;
-        position: relative;
-        float: none;
-        margin-top: 60px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-left: 48px;
+      
     }
+    .abt-frame {
+        z-index: 1;
+        top: -56px !important;
+        left: 27px;
+}
     .hero-cirle-img {
         width: 65%;
     position: relative;

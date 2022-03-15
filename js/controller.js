@@ -30,18 +30,40 @@ window.scrollTo(0,0);
 
   
 var mySwiper = new Swiper('.swiper-container.hero-banner', {
-  speed: 400,
-  spaceBetween: 50,
-  effect: 'fade',
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    clickable: true,
-    el: '.swiper-pagination-hero-banner',
-    type: 'bullets',
-  },
+  effect: 'coverflow',
+	grabCursor: true,
+  centeredSlides: true,
+  loop:true,
+  slidesPerView: 2,
+      spaceBetween: 0,
+      slideToClickedSlide:true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+	// coverflowEffect: {
+	//   rotate: 50,
+	//   stretch: 0,
+	//   depth: 100,
+	//   modifier: 1,
+	//   slideShadows : true,
+	// },
+	coverflowEffect: {
+        rotate: -3,
+        stretch: 0,
+        depth: 50,
+        modifier: 8,
+        slideShadows : true,
+    },
+  
+	//   	coverflowEffect: {
+	//   rotate: 50,
+	//   stretch: 50,
+	//   depth: 0,
+	//   modifier: 1,
+	//   slideShadows : true,
+  // },
+  
 });
 
 
