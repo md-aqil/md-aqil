@@ -51,7 +51,7 @@ const tl = gsap.timeline({
       trigger: "#about",
       start: "top",
     end: "bottom top",
-    snap: 1,
+    snap: 1 / (facts.length - 1),
       scrub: true,
       pin: "#about",
     //   markers: true,
