@@ -404,7 +404,7 @@ var swiper = new Swiper('.swiper-container.swiperHero', {
 
 document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
-  var dataText = [ "A ‘Graphic’ Designer.", "‘UI/UX’ Designer", "UI/UX Developer", "Wordpress Developer", "Professonal Video Editor"];
+  var dataText = ["‘UI/UX’ Designer", "UI/UX Developer",];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished

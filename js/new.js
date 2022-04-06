@@ -1,44 +1,3 @@
-let scroll_tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.factsContainer',
-        start: "top center",
-        // pin: true,
-        scrub: true,
-        end: "+=300",
-        // markers: true,
-        id: "main-container"
-    }
-}),
-    facts = [...document.querySelectorAll('.fact')]
-scroll_tl.to('.factsContainer h2', {
-    scale: 1.5,
-    duration: 1,
-    ease: "slow"
-});
- 
-scroll_tl.to('.factsContainer', {
-    background: 'black',
-    duration: 3,
-});
-
-scroll_tl.to(facts, {
-    xPercent: -85 * (facts.length - 1),
-    scrollTrigger: {
-        trigger: ".factsContainer_sm",
-        start: "center center",
-        pin: true,
-        // horizontal: true,
-        // pinSpacing:false,
-        // markers: true,
-        scrub: 1,
-        snap: 1 / (facts.length - 1),
-        // base vertical scrolling on how wide the container is so it feels more natural.
-        // end: () => `+=${smallFactsContainer.offsetWidth}`
-        end: () => `+=4320`
-    }
-});
-
-
 
 
 
@@ -49,12 +8,12 @@ const tl = gsap.timeline({
     yoyo:true,
     scrollTrigger: {
       trigger: "#about",
-      start: "top",
-    end: "bottom top",
-    snap: 1 / (facts.length - 1),
+      start: "+=50",
+      end: "bottom",
+    snap: 1,
       scrub: true,
-      pin: "#about",
-    //   markers: true,
+      pin: ".pin-it",
+      // markers: true,
       id: "about-container"
     }
   });

@@ -11,297 +11,59 @@
     <link rel="stylesheet" href="css/splitting.css">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <style>
-      .fixed-navigator {
-   
-    z-index: 1;
-    left: 50px;
-    right: inherit;
-}
-.card .paragraph {
-    font-weight: 300;
-    color: #ffffffba;
-}
-.card-title {
-  text-transform: capitalize;
-}
-.card.glass {
-  margin-bottom: 15px;
-}
-.scroll-menu .nav-link {
-    font-size: 16px;
-    color: #464646;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-.scroll-menu .nav-link i {
-  background: #e94578;
-    color: #ffff;
-    padding: 10px;
-    border-radius: 30px;
-    margin-right: 10px;
-    --size: 39px;
-    width: var(--size);
-    height: var(--size);
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.fixed-navigator {
-  border-radius: 10px;
-  background-color: transparent;
-}
-.scroll-menu {
-    list-style: none;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.scroll-menu .nav-link.active i {
-    background: #fff !important;
-    -webkit-text-fill-color:#e94578;
-    -webkit-background-clip: inherit !important;
-    
-}
-
-
-.scroll-menu .nav-link i {
-
-}
-.scroll-menu .nav-link {
-  color: #fff;
-}
-
-.port-items .container{
-  padding-left: 150px;
-}
-
-.bg-gradient {
-    /* background: linear-gradient(#ed1e79 -30%, #53277e 50%); */
-    background: url(./img/Banner-bg.png);
-    background-size: 100%;
-    
-}
-
-.blog-cards .card {
-  background: transparent;
-}
-.blog-cards .card-title  {
-  color: #fff;
-}
-.row.blog-cards.glass .card {
-    background: transparent;
-    margin-top: 15px;
-}
-.row.blog-cards.glass {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.db-card .card {
-    height: 23.3%;
-}
-.card-img {
-  height: 250px;
-  object-fit: cover;
-}
-@media (max-width: 480px) and (min-width: 320px) {
-.fixed-navigator {
-    width: 96%;
-    left: 0;
-    z-index: 100;
-    height: 73px;
-    bottom: 5px;
-    top: inherit;
-    padding-top: 6px;
-
-}
-.scroll-menu {
-  overflow-x: auto !important;
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    margin: 0 !important;
-    width: 100%;
-    justify-content: flex-start !important;
-    border: none !important;
-    overflow-y: hidden;
-    left: 8px;
-}
-.port-items .container {
-    padding-left: 15px;
-}
-
-.scroll-menu .nav-link {
-   
-    white-space: nowrap;
-}
-}
-
-.nav-link.active {
-    background: var(--theme-color1);
-    border-radius: 3px;
-}
-.nav-link.active a {
-    color: #fff !important;
-}
-.bg-transparent {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 20px;
-}
-.navbar-nav .nav-link {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-}
-.navbar-light .navbar-nav .nav-link {
-    color:#fff;
-}
-.col img {
-  box-shadow: 1px 6px 15px #00000033;
-        border-radius: 25px;
-        width: 100%;
-}
-    </style>
+ 
 </head>
 <body>
 
-  <main data-spy="scroll" data-target="#navbar-example2" data-offset="0" >
-      <div class="bg-gradient port-items" >
-        
-        <div class="container por">
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <a class="navbar-brand mr-lg-5" href="index.html">
-            <img width="130" src="img/logo-white-h.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link page" href="index.html">Home </a>
-                </li>
-                <li class="dropdown nav-item">
-                  <a href="works.html" class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Works
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="works.html">All</a>
-                    <a class="dropdown-item" href="Website-designs.html">Web Design</a>
-                    <a class="dropdown-item" href="mobile-app-design.html">Mobile App Design</a>
-                    <a class="dropdown-item" href="mobile-app-design.html">Brochures</a>
-                  </div>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link page" href="#html-css">HTML</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link page" href="#wordpress">Wordpress</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link page" href="#brochure">Brochure</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link page" href="#mobile-ui">Mobile UI</a>
-                </li>
-              
-                <li><a class="nav-link page" href="#website-ui">Website UI</a></li>
-               
-              </ul>
-            </div>
-          </nav>
-         
-        </div>
-      
-        
-        <div class="container spacer"  id="rootpost">
-          <div class="text-center">
-            <h2 class="title text-white ">Explore Works</h2>
-            <img class="line reveal-text mb-4" data-scroll src="img/Path 115.svg" alt="">
-            
-          </div>
-           <section >
-            <div class="product-row blog-cards" v-for="(data, category) in posts" :id="category">
-              <div class="product-col" v-for="post in data">
-                  <div class="card glass" >
-                    
-                    <img class="card-img" v-if="post.avatar" :src="post.avatar">
-                    <img class="card-img" v-else-if="post.data.work_image" :src="`https://md-aqil.github.io/md-aqil${post.data.work_image}`">
-                    <embed class="pdf-embed"  height="400" v-else-if="post.data.image_link" :src="`https://md-aqil.github.io/md-aqil${post.data.image_link}`" type="">
-                      <span class="tag text-white">{{category}}</span>
-                    <div class="card-body">
-                      <h5 class="card-title">{{post.data.post_title}}</h5>
-                      <a v-if="post.data.post_link" :href="post.data.post_link" target="_blank"  class="theme-text">Read More</a>
-                      <a v-else :href="`single.html?id=${post._id}`" target="_blank">View More</a>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          
-           </section>
-        
-        </div>
-      
-      </div>
-   <div class="container spacer">
-    <div class="fade-in-top m-center text-center" data-scroll="in">
-      <h1 class="style-text work-text" style="font-size: 70px;">I Am Available <br> For Freelance. Work</h1>
-      <p class="lead  mt-lg-4">Feel free to contact me at <b ><a class="theme-text" href="mailto:aqilali381@gmail.com">aqilali381@gmail.com</a></b></p>
-      <a href="cv.html" class="btn-shine reveal-text mt-4" data-scroll><span>Hire Me</span></a>
-    </div>
-   </div>
 
-   <div class="container">
-     <img src="./work/deerika/Notifications.svg" class="width100" alt="">
-     <hr>
-     <div class="row spacer">
-       <div class="col">
-        <img class="fade-in" data-scroll="" src="./work/deerika/01.svg" alt="">
-       </div>
-       <div class="col">
-        <img  class="fade-in delay_2" data-scroll="" src="./work/deerika/02.svg" alt="">
-       </div>
-       <div class="col">
-        <img  class="fade-in delay_3" data-scroll="" src="./work/deerika/03.svg" alt="">
-       </div>
-     </div>
-     <hr>
-     <div class="row spacer">
-      <div class="col">
-       <img  class="fade-in delay_3" data-scroll="" src="./work/deerika/two.png" alt="">
+  <div class="add-bg">
+    <div class="container spacer" id="portfolio">
+      <div class="text-center">
+        <h2 class="title text-white">Explore Works</h2>
+        <img class="line reveal-text" data-scroll src="img/Path 115.svg" alt="">
+      
       </div>
-      <div class="col">
-        <img class="fade-in" data-scroll="" src="./work/deerika/3.png" alt="">
-       </div>
-     
-      <div class="col">
-        <img  class="fade-in delay_3" data-scroll="" src="./work/deerika/MembershipDeerikaPlus.svg" alt="">
-       </div>
-    </div>
-    <hr>
-    <div class="row spacer">
-      <div class="col">
-       <img  class="fade-in delay_3" data-scroll="" src="./work/deerika/toast.svg" alt="">
-      </div>
-      <div class="col">
-        <img class="fade-in" data-scroll="" src="./work/deerika/06.svg" alt="">
-       </div>
-     
-      <div class="col">
-        <img  class="fade-in delay_3" data-scroll="" src="./work/deerika/MembershipDeerikaPlus.svg" alt="">
-       </div>
-    </div>
+   
+      <div class="row blog-cards mt-lg-5">
+        <div class="col-md-4">
+          <div class="card glass fade-in" data-scroll="in">
+            <video class="card-img" autoplay="autoplay" muted="" loop="">
+              <source src="https://dpadfinanceassetss-cdn.on.drv.tw/www.dpad.finance/GIF _ Video/0001-0120.m4v" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
   
+            <span class="tag text-white">Design & Developement</span>
+            <div class="card-body">
+              <h5 class="card-title text-white">DPAD.finance</h5>
+              <a href="https://dpad.finance/"  class="theme-text" target="_blank">Visit Site</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card glass fade-in delay_2" data-scroll="in">
+            <img class="card-img" src="./img/deerika.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Deerika</h5>
+              <a href="./Works/deerika.html" target="_blank"  class="theme-text">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card glass fade-in delay_3" data-scroll="in">
+            <img class="card-img" src="img/taj.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Tour My Inida</h5>
+           
+              <a href="./Works/tmi.html"  class="theme-text">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+     
+    </div>
    </div>
-  </main> 
-    
- 
   
     <script src="js/jQuery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
