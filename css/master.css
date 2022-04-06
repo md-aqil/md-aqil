@@ -1038,7 +1038,7 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
 .add-bg {
     background: url(../img/Banner-bg.png) center no-repeat var(--theme-color2);
 /* background: linear-gradient(#ed1e79 , #53277e) !important; */
-    background-size: 100% 100%;
+    background-size:cover;
     width: 100%;
     
     padding: 20px;
