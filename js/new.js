@@ -2,7 +2,7 @@
 
 
 // 
-const duration = 2;
+const duration = 1;
 const tl = gsap.timeline({
     loop:true,
     yoyo:true,
@@ -11,8 +11,8 @@ const tl = gsap.timeline({
       start: "+=50",
       end: "bottom",
     snap: 1,
-      scrub: true,
-      pin: ".pin-it",
+      // scrub: true,
+      // pin: ".pin-it",
       // markers: true,
       id: "about-container"
     }

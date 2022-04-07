@@ -1043,6 +1043,21 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
     
     padding: 20px;
 }
+.card.glass {
+    transition: all .3s;
+}
+.card.glass .card-img{
+    transition: all .3s;
+}
+.card.glass:hover {
+    /* box-shadow: 0 0 5px #ed1e78, 0 0 25px #19aafc, 0 0 50px #19aafc, 0 0 80px #19aafc; */
+    filter: drop-shadow( 0 0 5px #fbb11a) drop-shadow( 0 0 25px #ed1e79) drop-shadow(0 0 30px #771a9e) drop-shadow(0 0 40px #490c9a);
+}
+.card.glass:hover .card-img {
+    transform: translateY(-15px);
+
+}
+
 
 .grade-box {
     background: linear-gradient(#ed1e79 -30%, #53277e 50%);
