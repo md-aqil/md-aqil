@@ -1040,11 +1040,9 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
     background-size: 100% 100%;
 }
 .add-bg {
-    background: url(../img/Banner-bg.png) center no-repeat var(--theme-color2);
-/* background: linear-gradient(#ed1e79 , #53277e) !important; */
+ background: linear-gradient(#ed1e79 , #f49e8e) !important;
     background-size:cover;
     width: 100%;
-    
     padding: 20px;
 }
 .card.glass {
@@ -1064,7 +1062,7 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
 
 
 .grade-box {
-    background: linear-gradient(#ed1e79 -30%, #53277e 50%);
+    background: linear-gradient( #ec8e7d, #ed1e79 70%);
     position: relative;
     overflow: hidden;
   
