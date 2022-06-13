@@ -1,5 +1,5 @@
 .hero-section {
-    background-color: var(--bg-color);
+    background-color:none;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -62,7 +62,7 @@ color: var(--theme-color1);
 }
 .hero-content-row {
     align-items: center;
-    margin-top: 40px;
+    margin-top: 130px;
    
 }
 .hero-section .collapse.navbar-collapse {
@@ -1262,6 +1262,9 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
           border-radius: 0;
           color: var(--theme-color1);
   }
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(151 89 89);
+}
   @media (min-width: 320px) and (max-width: 480px) {
    
         .pdf-full-view {
