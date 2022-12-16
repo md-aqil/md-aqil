@@ -17,6 +17,10 @@ body {
 	--heading: font-size:30px;
 	--spacer-value: 80px;
 }
+.mark, mark {
+	padding: 0 5px;
+	background-color: #ff4a7a36;
+}
 
 .nav-link.nav-btn {
     background: var(--theme-color1);
