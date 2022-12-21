@@ -462,13 +462,14 @@ color: #fff;
 }
 .img-tab {
     border: 15px solid #eaeaea;
-        border-radius: 20px;
-        box-shadow: 1px 1px 20px #0000004d;
-        margin: auto;
-        display: block;
-        position: relative;
-        margin-top: -170px;
-        margin-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #0000004d;
+    margin: auto;
+    display: block;
+    position: relative;
+    margin-right: 0;
+    height: 750px;
+    width: 450px;
 }
 .circle-art img {
     position: absolute;
