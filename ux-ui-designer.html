@@ -73,7 +73,7 @@
       .paragraph {
           font-family: var(--paragraph-font);
       font-weight: normal;
-      font-size: 17px;
+      font-size: 16px;
       line-height: 30px;
       text-align: left;
       color: var(--paragraph-color);
@@ -135,13 +135,12 @@ body {
   -webkit-print-color-adjust: exact; 
 }
 #main {
-  width: calc(100% - var(--sidebar-width));
+  width: 100%;
   height: 100%;
   padding-right: 48px;
   padding-left: 48px;
 }
 .profile {
-  margin: 30px auto;
   margin-bottom: 0;
   text-align: center;
   background: var(--theme-color);
@@ -160,7 +159,13 @@ filter: drop-shadow(10px 10px 10px rgba(58, 23, 142, 0));
   border-radius: 50%;
 }
 .spacer {
+  padding-top: 20pxpx;
+  padding-bottom: 20px;
+}
+.spacer-top {
   padding-top: 30px;
+}
+.spacer-bottom {
   padding-bottom: 30px;
 }
 .header-area {
@@ -174,7 +179,7 @@ filter: drop-shadow(10px 10px 10px rgba(58, 23, 142, 0));
   -webkit-print-color-adjust: exact; 
   position: absolute;
   top: 0;
-  right: 0;
+  right: -30px;
   border-radius: 30px;
 }
 .title {
@@ -333,6 +338,10 @@ padding-left: 25px;
   left: -120px;
   bottom: -120px;
 }
+.link {
+  color: #98399a !important;
+    font-weight: bold;
+}
 .social-icons {
   list-style: none;
   margin: 0;
@@ -341,6 +350,8 @@ padding-left: 25px;
   position: relative;
   z-index: 1;
   margin-top: 20px;
+  flex-direction: column;
+  gap: 10px;
  
 }
 .social-icons li {
@@ -348,14 +359,13 @@ padding-left: 25px;
 }
 .social-icons li a {
   display: block;
-  text-decoration: none;
-  padding: 10px;
-  background: var(--theme-color);
-  color: #fff;
-  border-radius: 50%;
-  --size: 40px;
-  width: var(--size);
-  height: var(--size);
+    text-decoration: none;
+    padding: 9px;
+    background: #ffe479;
+    border-radius: 50%;
+    --size: 35px;
+    width: var(--size);
+    height: var(--size);
 }
 .social-icons li svg {
   width: 100%;
@@ -518,6 +528,34 @@ margin: 0;
   text-decoration: underline;
   color: #F5A623;
 }
+
+.top-section {
+  display: flex;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.a-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.a-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.a-flex {
+  gap: 20px;
+  display: flex;
+}
   </style>
 </head>
 
@@ -534,311 +572,193 @@ margin: 0;
   
 
  <section class="resume-container">
-  <aside id="aside">
-    <section>
-        <div class="profile">
-            <img src="https://md-aqil.github.io/md-aqil/img/about-me-img.png" alt="">
-        </div>
-    </section>
-    <!-- <section class="spacer">
-        <h4 class="bg-title">
-          About    
-        </h4>
-        <div class="content">
-          <p class="paragraph">
-              Computers have been my passion from ever. I could spend hours learning about coding and designing. However, this passion got wings when I grabbed a job as a UI/UX designer and developer. Though money cannot be totally ignored, even if it wasn’t there, I couldn’t be separated from designing and coding. I think I can totally relate to how
-            </p>
-        </div>
-      
-    </section> -->
-    <section class="spacer-bottom">
-  
-      <div class="content" style="padding:10px">
-          <ul class="list">
-         
-              <li><a href="">
-                  <svg style="margin-left:4px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 28.102 37.47">
-                      <defs>
-                        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-                          <stop offset="0" stop-color="#ffe479"/>
-                          <stop offset="1" stop-color="#f5a623"/>
-                        </linearGradient>
-                      </defs>
-                      <path id="Icon_awesome-map-marker-alt" data-name="Icon awesome-map-marker-alt" d="M12.607,36.714C1.974,21.3,0,19.717,0,14.051a14.051,14.051,0,1,1,28.1,0c0,5.665-1.974,7.247-12.607,22.663a1.757,1.757,0,0,1-2.888,0Zm1.444-16.808A5.855,5.855,0,1,0,8.2,14.051,5.855,5.855,0,0,0,14.051,19.906Z" fill="url(#linear-gradient)"/>
-                    </svg>
-                  KM-29 JP Cosmos Noida-Greater Noida Expy, Sector 134, Noida, Uttar Pradesh 201304
-                </a></li>
-          </ul>
-      </div>
-    
-  </section>
-  <section class="spacer">
-      <h4 class="bg-title">
-        Tools    
-      </h4>
-      <div class="content">
-        <h4 class="label">UI UX Designer</h4>
-        <ul class="bullet-list">
-          <li>Figma</li>
-          <li>Adobe XD</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Sketch</li>
-            <li>Marvel App</li>
-            <li>Overflow</li>
-        </ul>
-      </div>
-      <div class="content">
-          <h4 class="label">UI Development</h4>
-          <ul class="bullet-list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SCSS</li>
-              <li>javaScript</li>
-              <li>VUE JS</li>
-          </ul>
-        </div>
-     
-        <div class="content">
-          <h4 class="label">UI Animation Library</h4>
-          <ul class="bullet-list">
-              <li>Greensock</li>
-              <li>animate.css</li>
-              <li>ScrollOut.js</li>
-              <li>SVG Animation</li>
-              <li>CSS3 Keyframe Animation</li>
-          </ul>
-        </div>
-        <div class="content">
-          <h4 class="label">FrameWorks</h4>
-          <ul class="bullet-list">
-              <li>jQuery</li>
-              <li>Bootstrap (3 & 4)</li>
-              <li>ScrollOut.js</li>
-              <li>Swiper Js</li>
-              <li>Greensock</li>
-              <li>Vuetify</li>
-          </ul>
-        </div>
-        <div class="content">
-          <h4 class="label">CMS And Releted</h4>
-          <ul class="bullet-list">
-              <li>Wordpress</li>
-              <li>Shopify</li>
-              <li>Elementor</li>
-              <li>Woocommerce</li>
-          </ul>
-        </div>
-    
-    
-  </section>
-  <section class="spacer">
-      <h4 class="bg-title">
-       Education 
-      </h4>
-      <div class="content">
-          <p class="paragraph">
-          <b>Bachelor of Arts</b><br>
-          <i>R. B. Jalan College,
-              Mithila University</i>
-              <p class="text-white">2015–2018</p>
-          </p>
-      </div>
-  </section>
 
-
-  <svg class="circle-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="526" height="526" viewBox="0 0 526 526">
-      <defs>
-        <linearGradient id="linear-gradient" y1="0.426" x2="0.979" y2="0.426" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="#ffe479"/>
-          <stop offset="0.498" stop-color="#fcd15f"/>
-          <stop offset="1" stop-color="#f5a623"/>
-        </linearGradient>
-        <filter id="Oval" x="0" y="0" width="526" height="526" filterUnits="userSpaceOnUse">
-          <feOffset dx="10" dy="10" input="SourceAlpha"/>
-          <feGaussianBlur stdDeviation="5" result="blur"/>
-          <feFlood flood-color="#3a178e" flood-opacity="0"/>
-          <feComposite operator="in" in2="blur"/>
-          <feComposite in="SourceGraphic"/>
-        </filter>
-        <filter id="Oval-2" x="75" y="76" width="374" height="374" filterUnits="userSpaceOnUse">
-          <feOffset dx="10" dy="10" input="SourceAlpha"/>
-          <feGaussianBlur stdDeviation="5" result="blur-2"/>
-          <feFlood flood-color="#3a178e" flood-opacity="0"/>
-          <feComposite operator="in" in2="blur-2"/>
-          <feComposite in="SourceGraphic"/>
-        </filter>
-        <filter id="Oval-3" x="127" y="127" width="271" height="272" filterUnits="userSpaceOnUse">
-          <feOffset dx="10" dy="10" input="SourceAlpha"/>
-          <feGaussianBlur stdDeviation="5" result="blur-3"/>
-          <feFlood flood-color="#3a178e" flood-opacity="0"/>
-          <feComposite operator="in" in2="blur-3"/>
-          <feComposite in="SourceGraphic"/>
-        </filter>
-        <linearGradient id="linear-gradient-4" x1="0.5" y1="0" x2="0.5" y2="1" xlink:href="#linear-gradient"/>
-        <filter id="Oval-4" x="177" y="178" width="171" height="170" filterUnits="userSpaceOnUse">
-          <feOffset dx="10" dy="10" input="SourceAlpha"/>
-          <feGaussianBlur stdDeviation="5" result="blur-4"/>
-          <feFlood flood-color="#3a178e" flood-opacity="0"/>
-          <feComposite operator="in" in2="blur-4"/>
-          <feComposite in="SourceGraphic"/>
-        </filter>
-      </defs>
-      <g id="Group" transform="translate(5.35 5.35)">
-        <g transform="matrix(1, 0, 0, 1, -5.35, -5.35)" filter="url(#Oval)">
-          <circle id="Oval-5" data-name="Oval" cx="248" cy="248" r="248" transform="translate(5 5)" opacity="0.403" fill="url(#linear-gradient)"/>
-        </g>
-        <g transform="matrix(1, 0, 0, 1, -5.35, -5.35)" filter="url(#Oval-2)">
-          <circle id="Oval-6" data-name="Oval" cx="172" cy="172" r="172" transform="translate(80 81)" opacity="0.5" fill="url(#linear-gradient)"/>
-        </g>
-        <g transform="matrix(1, 0, 0, 1, -5.35, -5.35)" filter="url(#Oval-3)">
-          <ellipse id="Oval-7" data-name="Oval" cx="120.5" cy="121" rx="120.5" ry="121" transform="translate(132 132)" opacity="0.3" fill="url(#linear-gradient)"/>
-        </g>
-        <g transform="matrix(1, 0, 0, 1, -5.35, -5.35)" filter="url(#Oval-4)">
-          <ellipse id="Oval-8" data-name="Oval" cx="70.5" cy="70" rx="70.5" ry="70" transform="translate(182 183)" opacity="0.775" fill="url(#linear-gradient-4)"/>
-        </g>
-      </g>
-    </svg>
-  </aside>
   <main id="main">
+
      <section class="spacer">
         <div class="header-area">
-          <div style="display: flex;
-          align-items: center;
-          justify-content: space-between;">
+          <div class="d-flex">
+
+        <section class="top-section">
+          <div class="a-flex">
+            <div class="profile">
+              <img src="https://md-aqil.github.io/md-aqil/img/about-me-img.png" alt="">
+          </div>
+          <div >
             <h1 class="big-heading">Md Aqil</h1>
-            <ul class="social-icons" style="margin-top: 0;"> 
+           
+          <ul class="a-list">
+            <li>
+              <a href="" style="color:#000; ">
+              <b>Mobile: </b>+91 7210562014
+            </a>
+            </li>
+            <li>
+              <a href="" style="color:#000;">
+              <b>Email: </b>aqilali381@gmail.com</a>
+            </li>
+            <li>
+              <a href=""><b>Location: </b> Noida, Uttar Pradesh 201304</a>
+            </li>
+           <li>
+           <b>Portfolio: </b><a href="https://md-aqil.github.io/md-aqil" class="link">Visit Portfolio</a>
+           </li>
+
+          </ul>
+
+          <div style="display: flex; gap: 10px; margin-bottom: 10px;  ">
+           
+         
+          </div>
+         
+
+          </div>
+          </div>
+        
+          <ul class="social-icons" style="margin-top: 0;"> 
             
-              <li><a target="_blank" href="https://www.linkedin.com/in/md-aqil-09430a109/">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14.019" height="13.626" viewBox="0 0 14.019 13.626">
-                      <g id="in" transform="translate(-9.944 -9.65)">
-                        <g id="Group_38" data-name="Group 38">
-                          <rect id="Rectangle_4" data-name="Rectangle 4" width="2.894" height="8.95" transform="translate(10.222 14.326)" fill="#2c323d"/>
-                          <g id="in-2" data-name="in">
-                            <path id="Path_16" data-name="Path 16" d="M1106.018,78.408a1.725,1.725,0,1,0-1.711-1.725A1.718,1.718,0,0,0,1106.018,78.408Z" transform="translate(-1094.363 -65.307)" fill="#2c323d"/>
-                            <path id="Path_17" data-name="Path 17" d="M1109.946,82.187c0-1.315.6-2.1,1.762-2.1,1.066,0,1.576.751,1.576,2.1v4.46l2.88.047v-5.52c0-2.5-1.42-3.716-3.4-3.716A3.258,3.258,0,0,0,1109.946,79V77.744h-2.777v8.95h2.777Z" transform="translate(-1092.202 -63.418)" fill="#2c323d"/>
-                          </g>
+            <li><a target="_blank" href="https://www.linkedin.com/in/md-aqil-09430a109/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14.019" height="13.626" viewBox="0 0 14.019 13.626">
+                    <g id="in" transform="translate(-9.944 -9.65)">
+                      <g id="Group_38" data-name="Group 38">
+                        <rect id="Rectangle_4" data-name="Rectangle 4" width="2.894" height="8.95" transform="translate(10.222 14.326)" fill="#2c323d"/>
+                        <g id="in-2" data-name="in">
+                          <path id="Path_16" data-name="Path 16" d="M1106.018,78.408a1.725,1.725,0,1,0-1.711-1.725A1.718,1.718,0,0,0,1106.018,78.408Z" transform="translate(-1094.363 -65.307)" fill="#2c323d"/>
+                          <path id="Path_17" data-name="Path 17" d="M1109.946,82.187c0-1.315.6-2.1,1.762-2.1,1.066,0,1.576.751,1.576,2.1v4.46l2.88.047v-5.52c0-2.5-1.42-3.716-3.4-3.716A3.258,3.258,0,0,0,1109.946,79V77.744h-2.777v8.95h2.777Z" transform="translate(-1092.202 -63.418)" fill="#2c323d"/>
                         </g>
                       </g>
-                    </svg>
-                    
-              </a></li>
-           
-            
-            <li><a target="_blank" href="https://www.behance.net/aqilali">
-              <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M 9 4 C 6.24 4 4 6.24 4 9 L 4 41 C 4 43.76 6.24 46 9 46 L 41 46 C 43.76 46 46 43.76 46 41 L 46 9 C 46 6.24 43.76 4 41 4 L 9 4 z M 12 18 L 18.730469 18 C 19.460469 18 23.410156 17.950312 23.410156 21.570312 C 23.410156 23.490313 22.099766 24.139688 21.509766 24.429688 C 22.389766 24.709688 24 25.52 24 28 C 24 31.83 19.609531 32 19.019531 32 L 12 32 L 12 18 z M 29 18 L 36 18 L 36 20 L 29 20 L 29 18 z M 15 20.429688 L 15 23.710938 L 18.220703 23.710938 C 18.660703 23.710938 20.119141 23.47 20.119141 22 C 20.119141 20.53 18.219687 20.429688 17.929688 20.429688 L 15 20.429688 z M 32.730469 21 C 36.630469 21 37.689609 24.039766 37.849609 24.759766 C 37.999609 25.489766 38 26.13 38 27 L 30.099609 27 C 30.099609 27.87 30.560625 29.830078 32.890625 29.830078 C 33.510625 29.830078 33.969453 29.680625 34.439453 29.390625 C 34.899453 29.100625 35.060938 28.819297 35.210938 28.529297 L 37.839844 28.529297 C 37.379844 29.679297 36.760078 30.550859 35.830078 31.130859 C 34.900078 31.710859 33.820078 32 32.580078 32 C 31.800078 32 31.03 31.850547 30.25 31.560547 C 29.63 31.270547 29.010781 30.840156 28.550781 30.410156 C 28.090781 29.970156 27.780703 29.389922 27.470703 28.669922 C 27.160703 28.089922 27 27.22 27 26.5 C 27 25.78 27.290469 21 32.730469 21 z M 32.730469 23.029297 C 30.470469 23.029297 30.099609 25.199844 30.099609 25.339844 L 35.060547 25.339844 C 34.900547 24.619844 34.250469 23.029297 32.730469 23.029297 z M 15 25.710938 L 15 29.570312 L 18.351562 29.570312 C 18.640563 29.570312 20.679688 29.480937 20.679688 27.710938 C 20.679687 25.950937 19.077562 25.710938 18.351562 25.710938 L 15 25.710938 z"/></svg>
-        </a></li>
-  
-    <li><a target="_blank" href="https://codepen.io/md-aqil">
+                    </g>
+                  </svg>
+                  
+            </a></li>
+        
+          
+          <li><a target="_blank" href="https://www.behance.net/aqilali">
+            <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M 9 4 C 6.24 4 4 6.24 4 9 L 4 41 C 4 43.76 6.24 46 9 46 L 41 46 C 43.76 46 46 43.76 46 41 L 46 9 C 46 6.24 43.76 4 41 4 L 9 4 z M 12 18 L 18.730469 18 C 19.460469 18 23.410156 17.950312 23.410156 21.570312 C 23.410156 23.490313 22.099766 24.139688 21.509766 24.429688 C 22.389766 24.709688 24 25.52 24 28 C 24 31.83 19.609531 32 19.019531 32 L 12 32 L 12 18 z M 29 18 L 36 18 L 36 20 L 29 20 L 29 18 z M 15 20.429688 L 15 23.710938 L 18.220703 23.710938 C 18.660703 23.710938 20.119141 23.47 20.119141 22 C 20.119141 20.53 18.219687 20.429688 17.929688 20.429688 L 15 20.429688 z M 32.730469 21 C 36.630469 21 37.689609 24.039766 37.849609 24.759766 C 37.999609 25.489766 38 26.13 38 27 L 30.099609 27 C 30.099609 27.87 30.560625 29.830078 32.890625 29.830078 C 33.510625 29.830078 33.969453 29.680625 34.439453 29.390625 C 34.899453 29.100625 35.060938 28.819297 35.210938 28.529297 L 37.839844 28.529297 C 37.379844 29.679297 36.760078 30.550859 35.830078 31.130859 C 34.900078 31.710859 33.820078 32 32.580078 32 C 31.800078 32 31.03 31.850547 30.25 31.560547 C 29.63 31.270547 29.010781 30.840156 28.550781 30.410156 C 28.090781 29.970156 27.780703 29.389922 27.470703 28.669922 C 27.160703 28.089922 27 27.22 27 26.5 C 27 25.78 27.290469 21 32.730469 21 z M 32.730469 23.029297 C 30.470469 23.029297 30.099609 25.199844 30.099609 25.339844 L 35.060547 25.339844 C 34.900547 24.619844 34.250469 23.029297 32.730469 23.029297 z M 15 25.710938 L 15 29.570312 L 18.351562 29.570312 C 18.640563 29.570312 20.679688 29.480937 20.679688 27.710938 C 20.679687 25.950937 19.077562 25.710938 18.351562 25.710938 L 15 25.710938 z"/></svg>
+      </a></li>
+
+      <li><a target="_blank" href="https://codepen.io/md-aqil">
       <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 25 4 L 4 17.34375 L 4 32.652344 L 25 46 L 46 32.65625 L 46 17.34375 Z M 25 29.183594 L 19.066406 25.070313 L 25 21.023438 L 30.933594 25.070313 Z M 27 17.605469 L 27 9.949219 L 40.429688 18.484375 L 34.410156 22.65625 Z M 23 17.605469 L 15.589844 22.65625 L 9.570313 18.484375 L 23 9.949219 Z M 12.09375 25.042969 L 8 27.832031 L 8 22.203125 Z M 15.570313 27.453125 L 23 32.605469 L 23 40.050781 L 9.589844 31.527344 Z M 27 32.605469 L 34.429688 27.453125 L 40.410156 31.527344 L 27 40.050781 Z M 37.90625 25.042969 L 42 22.203125 L 42 27.832031 Z"/></svg>
-      
-  </a></li>
+
+      </a></li>
+
+      <li><a target="_blank" href="https://www.youtube.com/channel/UCAZcCHjNUiZDmB8cK19FqEA">
+        <svg xmlns="http://www.w3.org/2000/svg" width="38.4" height="27" viewBox="0 0 38.4 27">
+          <path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M38.648,8.725a4.825,4.825,0,0,0-3.395-3.417c-2.995-.808-15-.808-15-.808s-12.008,0-15,.808A4.825,4.825,0,0,0,1.852,8.725c-.8,3.014-.8,9.3-.8,9.3s0,6.289.8,9.3a4.753,4.753,0,0,0,3.395,3.362c2.995.808,15,.808,15,.808s12.008,0,15-.808a4.753,4.753,0,0,0,3.395-3.362c.8-3.014.8-9.3.8-9.3s0-6.289-.8-9.3ZM16.323,23.737V12.318l10.036,5.71L16.323,23.737Z" transform="translate(-1.05 -4.5)"/>
+        </svg>
+        
+      </a></li>
+
+        </ul>
+        </section>
+
+<section class="">
+  <p class="paragraph" style="padding-right: 50px;">
+    A seasoned UI/UX Designer with 5 years of experience specializing in creating intuitive and visually appealing user experiences. Proven track record of conducting user research, wireframing, prototyping, and collaborating with cross-functional teams. Proficient in design tools like Figma and Adobe XD, with a keen eye for detail and a passion for staying updated with design trends.
   
-        <li><a target="_blank" href="https://www.youtube.com/channel/UCAZcCHjNUiZDmB8cK19FqEA">
-          <svg xmlns="http://www.w3.org/2000/svg" width="38.4" height="27" viewBox="0 0 38.4 27">
-            <path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M38.648,8.725a4.825,4.825,0,0,0-3.395-3.417c-2.995-.808-15-.808-15-.808s-12.008,0-15,.808A4.825,4.825,0,0,0,1.852,8.725c-.8,3.014-.8,9.3-.8,9.3s0,6.289.8,9.3a4.753,4.753,0,0,0,3.395,3.362c2.995.808,15,.808,15,.808s12.008,0,15-.808a4.753,4.753,0,0,0,3.395-3.362c.8-3.014.8-9.3.8-9.3s0-6.289-.8-9.3ZM16.323,23.737V12.318l10.036,5.71L16.323,23.737Z" transform="translate(-1.05 -4.5)"/>
-          </svg>
-          
-    </a></li>
-  
-          </ul>
-  
-          </div>
-    
-          
-          <h3 class="subheading">UI / UX DESIGNER</h3>
-          <div style="display: flex; gap: 10px; margin-bottom: 10px;  ">
-            <a href="" style="color:#000; background: #fcdb6e67">
-              +91 7210562014
-          </a>
-          <a href="" style="color:#000; background: #fcdb6e67">
-              aqilali381@gmail.com</a>
-          </div>
-       
-        </div>
-          <div class="paragraph">
-            As a UI/UX/Product Designer, I have gained over 5 years of relevant industry experience, and I am passionate about both UI/UX design and web experience aesthetics.
-             I thrive in collaborative environments, working with other designers, marketers, and engineers to create and maintain innovative web experiences that align with the company's brand.
-            My design process focuses on delivering end-to-end solutions that prioritize the user experience and user interface best practices. I excel in creating user stories, wireframes, user flows, and high-fidelity UI designs to solve complex design problems. With my skills and expertise, I am confident in my ability to create concrete and effective design solutions that enhance the user experience.
-          </div>
-     
+  </p>
+            
+</section>
+</div>
+<hr style="margin-bottom: 30px; border: 1px dashed #ddd;">
      </section>
      <!-- skills -->
-     <section class="spacer">
+     <section class="spacer" style="padding-top: 0;">
       <h2 class="heading">Skills </h2>
       <ul class="simple-list">
-        <li>Proficient in Adobe Creative Suite, Sketch, Figma, InVision, and other design software</li>
         <li>
-            Strong understanding of user-centered design principles and practices
-          </li>
-          <li>
-            Execute initiatives on research sharing and ideas to improve user exprience
-          </li>
-          <li>
-            Conducted user research to identify pain points and design solutions to improve user experiences
-          </li>
-          <li>
-            Optimizes the user experience based on user behavioural
-          </li>
-
-          <li> 
-            Excellent visual design skills, including typography, color theory, and composition
-          </li>
-          <li>
-            Delivering brand aligned deliveries across the entire web and mobile experience
-          </li>
-          <li>
-            Possesses a proficient knowledge of HTML, CSS, and JavaScript, which enables the creation of high-quality and effective UI/UX designs.
-          </li>
-       
-          <li>
-            Utilizes collaborative skills to translate designs into functional and inclusive experiences on both web and mobile platforms with developers, while also adeptly collaborating with cross-functional teams, such as product managers, engineers, and stakeholders.
-          </li>
-          
+          User Research
+        </li>
+        <li>Wireframing and Prototyping</li>
+        <li>UI Design</li>
+        <li>
+          Usability Testing
+        </li>
+        <li>
+          Collaboration
+        </li>
+        <li>
+          Problem-Solving
+        </li>
+        <li>
+          Time Management
+        </li>
+        <li>
+          HTML/CSS/JavaScript/VueJS
+        </li>
+        <h4 style="margin-top: 10px;">Tools</h4>
+        <li>
+          Figma
+        </li>
+        <li>Adobe XD</li>
+        <li>Photoshop</li>
+        <li>Illustrator</li>
+        <li>Sketch</li>
+        <li>Marvel App</li>
+        <li>Marvel App</li>
+        <li>Overflow</li>        
+        
     </ul>
  </section>
      <!-- skills END -->
      
 
      <section class="spacer" >
-        <h2 class="heading">Experience <span class="pill">7+ Years</span></h2>
+        <h2 class="heading">Experience <span class="pill">5 Years</span></h2>
         <ul class="timeline-list">
         
-      
       <li>
-        <a href="" class="title">DJT Corporation & Investments Pvt Ltd</a>
-        <h4 class="subtitle">Senior UI/UX designer</h4>
-        <i>From 12<sup>th</sup> July 2021. to Current working here</i>
+        <a href="" class="title">DJT Corporation & Investments Pvt Ltd | <small>Noida 125, India</small></a>
+        <h4 class="subtitle">Senior UI/UX designer | From 12<sup>th</sup> July 2021. to 2 July 2023</h4>
+
+
+
         <article style="margin-bottom: -50px;">
             <ul class="simple-list">
-                <h4>Responsibilities</h4>
-                <li>Developed wireframes, prototypes, and high-fidelity designs for multiple platforms</li>
-                <li>Create user experiences on Web and Mobile</li>
+               
+                <li>
+                  Conducted in-depth user research to identify user behaviors, preferences, and pain points, informing design decisions that improved user experiences.
+                </li>
+                <li>
+                  Created wireframes, user flows, and interactive prototypes to effectively communicate design concepts and interactions to stakeholders.
+                </li>
                 <li>
                   Collaborated with product managers and engineers to design and launch multiple mobile and web applications
                   <li>
-                    Conducted user research to identify pain points and design solutions to improve user experiences
+                    Developed visually appealing user interfaces aligned with brand guidelines, enhancing overall user engagement and satisfaction.
+
                   </li>
+
                   <li>
-                    Worked closely with developers to ensure design implementation and quality assurance
+                   Led usability testing sessions, analyzed user feedback, and iterated on designs to optimize usability and functionality.
+
                   </li>
 
                
                   <li>
-                    Conducted usability testing and analyzed user feedback to refine designs and improve user experiences
+                    Collaborated closely with product managers, developers, and other stakeholders to align designs with project requirements and business objectives.
+
+                  </li>
+
+
+                  <li>
+                    Advocated for accessibility, ensuring designs complied with accessibility standards and were inclusive for all users.
+
                   </li>
                   <li>
-                    Utilizes collaborative skills to translate designs into functional and inclusive experiences on both web and mobile platforms with developers, while also adeptly collaborating with cross-functional teams, such as product managers, engineers, and stakeholders.
+                    Stayed updated with the latest design trends, tools, and technologies, continually enhancing the design process and delivering cutting-edge solutions.
+
                   </li>
+                  <li>
+                    Produced design documentation, including style guides and specifications, facilitating seamless communication between design and development teams.
+
+                  </li>
+
                   <li> 
                     Used proficient knowledge of HTML, CSS, JavaScript and vue.js, which enables the creation of high-quality and effective UI/UX designs. and “Deerika Admin” for managing deerika app backend
                   </li>
-                  <li>
-                    Collaborated with marketing teams to design promotional materials and campaigns
-                  </li>
-                  <li>
-                    Maintained a consistent brand identity across all designs
-                  </li>
+
+                
                   <li>
                     <a target="_blank" href="https://md-aqil.github.io/md-aqil/Works/deerika.html">View Designs</a>
                   </li>
@@ -865,31 +785,40 @@ margin: 0;
     </li>
 
     <li class="mt-5">
-      <a href="https://www.wizardinfoways.com/" class="title">wizardinfoways</a>
-         <h4 class="subtitle">UI/UX Designer</h4>
-         <i>Sep 16th, 2019 to March 31st, 2020</i>
+      <a href="https://www.wizardinfoways.com/" class="title">Wizardinfoways, Delhi Inida</a>
+         <h4 class="subtitle">UI/UX Designer | From Sep 16th, 2019 to March 31st, 2020</h4>
+        
       <article>
           <ul class="simple-list">
           
-              <h4>My Responsibilities:</h4>
               <li>
-                gathering user data, interviews
+                Conducted in-depth user research to identify user behaviors, preferences, and pain points, informing design decisions that improved user experiences.
+
               </li>
               <li>
-                task flows, user journeys, scenarios
+                Created wireframes, user flows, and interactive prototypes to effectively communicate design concepts and interactions to stakeholders.
+
               </li>
               <li>
-                screen flows, navigation models
+                Developed visually appealing user interfaces aligned with brand guidelines, enhancing overall user engagement and satisfaction.
+
               </li>
-              <li>rapid prototyping, interactive prototypes</li>
+              <li>Led usability testing sessions, analyzed user feedback, and iterated on designs to optimize usability and functionality.
+              </li>
               <li>
-                usability testing
+                Collaborated closely with product managers, developers, and other stakeholders to align designs with project requirements and business objectives.
+
               </li>
               <li>
-                high-fidelity visual design
+                Advocated for accessibility, ensuring designs complied with accessibility standards and were inclusive for all users.
+
               </li>
-              <li>Coding HTML5 & CSS3</li>
-          
+              <li>Stayed updated with the latest design trends, tools, and technologies, continually enhancing the design process and delivering cutting-edge solutions.
+              </li>
+              <li>
+                Produced design documentation, including style guides and specifications, facilitating seamless communication between design and development teams.
+
+              </li>
              
           </ul>
       </article>
@@ -897,83 +826,47 @@ margin: 0;
   </li>
 
     <li class="mt-5">
-      <a href="" class="title">bigly.io</a>
-         <h4 class="subtitle">UI/UX Designer/Developer</h4>
-         <i>November-2017 to September 17th 2019</i>
+      <a href="" class="title">bigly.io, Delhi India</a>
+         <h4 class="subtitle">UI/UX Designer/Developer | November-2017 to September 17th 2019</h4>
       <article>
           <ul class="simple-list">
           
-              <h4>My Responsibilities:</h4>
+             
               <li>
-                As a skilled UI/UX designer i am Proficient in Adobe Creative Suite, Figma, InVision,
-                 and other design software i also have very good  knowledge of HTML, CSS, JavaScript,and vue.js,
-                I have experience in developing wireframes, prototypes, and high-fidelity designs for multiple platforms,
-                 including web and mobile. I have collaborated with product managers and engineers to design and launch mobile and web applications,
-                 utilizing user research to identify pain points and improve the overall user experience.
-                  I have also conducted usability testing and analyzed user feedback to refine designs and ensure consistency with brand identity.
+                As a skilled UI/UX designer, I bring proficiency in Adobe Creative Suite, Figma, InVision, and other design software. My extensive knowledge extends to HTML, CSS, JavaScript, and vue.js, enabling me to create comprehensive and impactful designs. My experience encompasses the development of wireframes, prototypes, and high-fidelity designs for diverse platforms, including web and mobile applications.
+
               </li>
               <li>
-                Additionally, I have provided practical and creative inputs to various web and mobile App projects for Bigly,
-                working closely with developers to ensure design implementation and quality assurance.
-                I have collaborated with marketing teams to design promotional materials and campaigns,
-                while also executing initiatives on research sharing and ideas to improve our websites.
+                Collaborated closely with product managers and engineers to design and launch both mobile and web applications. Utilized user research insights to identify pain points and elevate the overall user experience.
+
               </li>
               <li>
-                My skills in translating designs into functional and inclusive experiences on both web and mobile platforms,
-                as well as collaborating with cross-functional teams,
-                such as product managers, engineers, and stakeholders,
-                have enabled me to optimize the user experience based on user behavioral data. Overall,
-                I take pride in creating mockups and creative solutions for all web experiences, while delivering brand-aligned designs across the entire web experience.
+                Conducted usability testing and meticulously analyzed user feedback, allowing me to fine-tune designs and maintain alignment with brand identity.
+
+              </li>
+              <li>
+                Played an instrumental role in numerous web and mobile app projects for Bigly, offering practical and creative insights. My collaboration with developers ensured seamless design implementation and robust quality assurance.
+
+              </li>
+              <li>
+                Partnered with marketing teams to conceptualize and design promotional materials and campaigns, showcasing my ability to merge design with marketing objectives.
+
+              </li>
+              <li>
+                Actively contributed to research sharing initiatives and presented innovative ideas aimed at enhancing website performance and user engagement.
+
+              </li>
+              <li>
+                My proficiency in translating designs into functional and inclusive experiences for both web and mobile platforms, coupled with effective collaboration across cross-functional teams, including product managers, engineers, and stakeholders, has consistently optimized user experiences based on behavioral data. I take pride in creating compelling mockups and innovative solutions for diverse web experiences, delivering brand-consistent designs throughout the web journey.
+
+
               </li>
              
           </ul>
       </article>
   
   </li>
-            <li>
-                <a href="http://www.edunuts.com/" class="title">Edunuts.com</a>
-                   <h4 class="subtitle">UI Developer</h4>
-                   <i>1-1 -2015 to 4-11-2017</i>
-
-                <article>
-                    <ul class="simple-list">
-                      <p style="font-size: 15px;
-                      line-height: 1.5;
-                      color: #525252;">
-                        As the UI/UX Developer for this project, I collaborated with the designer to develop a user interface that met the client's requirements and provided an excellent user experience. I developed the user interface using HTML, CSS, and JavaScript, ensuring that it was responsive, accessible, and optimized for performance. I also conducted user testing and incorporated user feedback into the design to improve the user experience.
-                        <br>
-                        <b>As a result of my work, the project achieved the following success numbers:
-                        </b>
-                        <ul>
-                          <li>
-                            Increased user engagement by 25% due to the improved user experience and intuitive design.
-                          </li>
-                          <li>
-                            Reduced page load time by 30% by optimizing the user interface for performance.
-                          </li>
-                          <li>
-                            Improved website traffic by 20% by creating a responsive design that was accessible on multiple devices.
-                          </li>
-                        </ul>
-                      </p>
-                        <h4>My Responsibilities:</h4>
-                        <li>Collaborated with the designer to develop a user interface that met the client's requirements and user needs</li>
-                        <li>Developed the user interface using HTML, CSS, and JavaScript, ensuring that it was responsive, accessible, and optimized for performance                        </li>
-                        <li>
-                          Conducted user testing and incorporated user feedback into the design to improve the user experience
-                        </li>
-                        <li>
-                          Troubleshot and debugged issues related to the user interface and worked with other developers to resolve technical problems
-
-                        </li>
-                          <li>
-                            Stayed up-to-date with the latest trends and technologies in UI/UX development and applied them to the development process
-                          </li>
-                        
-                    </ul>
-                </article>
-            
-            </li>
+           
             
         </ul>
    </section>
@@ -988,43 +881,20 @@ margin: 0;
           <a target="_blank" href="https://md-aqil.github.io/md-aqil/Works/deerika.html">Deerika</a>
          </li>
       </ul>
-      <ul class="social-icons" style="margin-top: 20px;"> 
-       
-        <li><a target="_blank" href="https://www.linkedin.com/in/md-aqil-09430a109/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14.019" height="13.626" viewBox="0 0 14.019 13.626">
-                <g id="in" transform="translate(-9.944 -9.65)">
-                  <g id="Group_38" data-name="Group 38">
-                    <rect id="Rectangle_4" data-name="Rectangle 4" width="2.894" height="8.95" transform="translate(10.222 14.326)" fill="#2c323d"/>
-                    <g id="in-2" data-name="in">
-                      <path id="Path_16" data-name="Path 16" d="M1106.018,78.408a1.725,1.725,0,1,0-1.711-1.725A1.718,1.718,0,0,0,1106.018,78.408Z" transform="translate(-1094.363 -65.307)" fill="#2c323d"/>
-                      <path id="Path_17" data-name="Path 17" d="M1109.946,82.187c0-1.315.6-2.1,1.762-2.1,1.066,0,1.576.751,1.576,2.1v4.46l2.88.047v-5.52c0-2.5-1.42-3.716-3.4-3.716A3.258,3.258,0,0,0,1109.946,79V77.744h-2.777v8.95h2.777Z" transform="translate(-1092.202 -63.418)" fill="#2c323d"/>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-              
-        </a></li>
-     
-      
-      <li><a target="_blank" href="https://www.behance.net/aqilali">
-        <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">    <path d="M 9 4 C 6.24 4 4 6.24 4 9 L 4 41 C 4 43.76 6.24 46 9 46 L 41 46 C 43.76 46 46 43.76 46 41 L 46 9 C 46 6.24 43.76 4 41 4 L 9 4 z M 12 18 L 18.730469 18 C 19.460469 18 23.410156 17.950312 23.410156 21.570312 C 23.410156 23.490313 22.099766 24.139688 21.509766 24.429688 C 22.389766 24.709688 24 25.52 24 28 C 24 31.83 19.609531 32 19.019531 32 L 12 32 L 12 18 z M 29 18 L 36 18 L 36 20 L 29 20 L 29 18 z M 15 20.429688 L 15 23.710938 L 18.220703 23.710938 C 18.660703 23.710938 20.119141 23.47 20.119141 22 C 20.119141 20.53 18.219687 20.429688 17.929688 20.429688 L 15 20.429688 z M 32.730469 21 C 36.630469 21 37.689609 24.039766 37.849609 24.759766 C 37.999609 25.489766 38 26.13 38 27 L 30.099609 27 C 30.099609 27.87 30.560625 29.830078 32.890625 29.830078 C 33.510625 29.830078 33.969453 29.680625 34.439453 29.390625 C 34.899453 29.100625 35.060938 28.819297 35.210938 28.529297 L 37.839844 28.529297 C 37.379844 29.679297 36.760078 30.550859 35.830078 31.130859 C 34.900078 31.710859 33.820078 32 32.580078 32 C 31.800078 32 31.03 31.850547 30.25 31.560547 C 29.63 31.270547 29.010781 30.840156 28.550781 30.410156 C 28.090781 29.970156 27.780703 29.389922 27.470703 28.669922 C 27.160703 28.089922 27 27.22 27 26.5 C 27 25.78 27.290469 21 32.730469 21 z M 32.730469 23.029297 C 30.470469 23.029297 30.099609 25.199844 30.099609 25.339844 L 35.060547 25.339844 C 34.900547 24.619844 34.250469 23.029297 32.730469 23.029297 z M 15 25.710938 L 15 29.570312 L 18.351562 29.570312 C 18.640563 29.570312 20.679688 29.480937 20.679688 27.710938 C 20.679687 25.950937 19.077562 25.710938 18.351562 25.710938 L 15 25.710938 z"/></svg>
-  </a></li>
-
-<li><a target="_blank" href="https://codepen.io/md-aqil">
-<svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 25 4 L 4 17.34375 L 4 32.652344 L 25 46 L 46 32.65625 L 46 17.34375 Z M 25 29.183594 L 19.066406 25.070313 L 25 21.023438 L 30.933594 25.070313 Z M 27 17.605469 L 27 9.949219 L 40.429688 18.484375 L 34.410156 22.65625 Z M 23 17.605469 L 15.589844 22.65625 L 9.570313 18.484375 L 23 9.949219 Z M 12.09375 25.042969 L 8 27.832031 L 8 22.203125 Z M 15.570313 27.453125 L 23 32.605469 L 23 40.050781 L 9.589844 31.527344 Z M 27 32.605469 L 34.429688 27.453125 L 40.410156 31.527344 L 27 40.050781 Z M 37.90625 25.042969 L 42 22.203125 L 42 27.832031 Z"/></svg>
-
-</a></li>
-
-  <li><a target="_blank" href="https://www.youtube.com/channel/UCAZcCHjNUiZDmB8cK19FqEA">
-    <svg xmlns="http://www.w3.org/2000/svg" width="38.4" height="27" viewBox="0 0 38.4 27">
-      <path id="Icon_awesome-youtube" data-name="Icon awesome-youtube" d="M38.648,8.725a4.825,4.825,0,0,0-3.395-3.417c-2.995-.808-15-.808-15-.808s-12.008,0-15,.808A4.825,4.825,0,0,0,1.852,8.725c-.8,3.014-.8,9.3-.8,9.3s0,6.289.8,9.3a4.753,4.753,0,0,0,3.395,3.362c2.995.808,15,.808,15,.808s12.008,0,15-.808a4.753,4.753,0,0,0,3.395-3.362c.8-3.014.8-9.3.8-9.3s0-6.289-.8-9.3ZM16.323,23.737V12.318l10.036,5.71L16.323,23.737Z" transform="translate(-1.05 -4.5)"/>
-    </svg>
-    
-</a></li>
-
-    </ul>
-
-      
+      <section class="spacer">
+        <h4>
+         Education 
+        </h4>
+        <div class="content">
+            <p class="paragraph">
+            <b>Bachelor of Arts</b><br>
+            <i>R. B. Jalan College,
+                Mithila University</i>
+                <p class="text-white">2015–2018</p>
+            </p>
+        </div>
+    </section>
+  
  </section>
    
   </main>
