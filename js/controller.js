@@ -34,9 +34,10 @@ var mySwiper = new Swiper('.swiper-container.hero-banner', {
 	grabCursor: true,
   centeredSlides: true,
   loop:true,
-  slidesPerView: 2,
-      spaceBetween: 0,
+  slidesPerView: "auto",
+  centeredSlides: true,
       slideToClickedSlide:true,
+      spaceBetween: 0,
       autoplay: {
         delay: 1000,
         disableOnInteraction: false,
@@ -55,6 +56,7 @@ var mySwiper = new Swiper('.swiper-container.hero-banner', {
         modifier: 8,
         slideShadows : true,
     },
+
   
 	//   	coverflowEffect: {
 	//   rotate: 50,

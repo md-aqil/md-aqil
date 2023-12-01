@@ -373,7 +373,6 @@ margin-bottom: 30px;
 
 #portfolio {
     list-style: none;
-    padding-left: 0;
 }
 #portfolio li {
     display: flex;
@@ -1278,6 +1277,62 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
   }
   .navbar-light .navbar-nav .nav-link {
     color: rgb(151 89 89);
+} 
+
+.add-mockup {
+    position: relative;
+}
+
+    .add-mockup:before {
+        content: "";
+        background: url(../img/mobile-mocup.png) center no-repeat;
+        width: 740px;
+        height: 970px;
+        position: absolute;
+        top: 0px;
+        right: -15px;
+        background-size: 100%;
+        z-index: 100;
+        
+}
+#footer-section {
+    overflow: hidden;
+}
+
+.hero-section {
+    /* overflow-x: hidden; */
+}
+.hero-banner .swiper-slide {
+    width: 336px !important;
+    border-radius: 30px;
+    height: 653px;
+}
+.add-mockup .swiper-container {
+    margin-left: -40px;
+    margin-top: 10px;
+}
+
+.hero-banner .swiper-slide img {
+    width: 90%;
+    height: 99%;
+}
+
+.hero-text {
+    padding: 0 100px;
+}
+
+.hero-article {
+    color: #333;
+    font-size: 28px;
+}
+.hero-article b {
+    color: var(--theme-color1);
+    font-weight: normal;
+    font-style: italic;
+}
+.pt-row {
+    margin: 0;
+    width: 99%  !important;
 }
   @media (min-width: 320px) and (max-width: 480px) {
    
@@ -1293,6 +1348,48 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
             padding-right: 15px;
             line-height: 1.5;
         }
+        .hero-text {
+            padding: 5px;
+        }
       
+        .hero-banner .swiper-slide {
+            width: 260px  !important;
+            height: 495px;
+        }
+
+        .add-mockup {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 100px;
+            padding-top: 10px;
+        }
+
+        .add-mockup:before {
+            content: "";
+            background: url(../img/mobile-mocup.png) center no-repeat;
+            width: 570px;
+            height: 910px;
+            position: absolute;
+            top: -80px;
+            right: -148px;
+            background-size: 100%;
+            z-index: 100;
+        }
+
+        .add-mockup .swiper-container {
+            margin-left: auto;
+            margin-top: 10px;
+        }
+        .hero-article {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .hero-art {
+            width: initial;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
   }
  
