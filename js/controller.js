@@ -38,10 +38,10 @@ var mySwiper = new Swiper('.swiper-container.hero-banner', {
   centeredSlides: true,
       slideToClickedSlide:true,
       spaceBetween: 0,
-      autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 1000,
+      //   disableOnInteraction: false,
+      // },
 	// coverflowEffect: {
 	//   rotate: 50,
 	//   stretch: 0,

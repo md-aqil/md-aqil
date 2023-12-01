@@ -1286,8 +1286,8 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
     .add-mockup:before {
         content: "";
         background: url(../img/mobile-mocup.png) center no-repeat;
-        width: 740px;
-        height: 970px;
+        width: 640px;
+        height: 835px;
         position: absolute;
         top: 0px;
         right: -15px;
@@ -1303,12 +1303,12 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
     /* overflow-x: hidden; */
 }
 .hero-banner .swiper-slide {
-    width: 336px !important;
+    width: 300px !important;
     border-radius: 30px;
-    height: 653px;
+    height: 560px;
 }
 .add-mockup .swiper-container {
-    margin-left: -40px;
+    margin-left: 11px;
     margin-top: 10px;
 }
 
@@ -1334,6 +1334,8 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
     margin: 0;
     width: 99%  !important;
 }
+
+
   @media (min-width: 320px) and (max-width: 480px) {
    
         .pdf-full-view {
