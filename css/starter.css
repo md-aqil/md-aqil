@@ -201,47 +201,6 @@ body {
 	   object-position: center center;
   }
   
-  .content {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	max-width: 35em;
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	color: white;
-	padding: 2em;
-	font-size: 2.5vmin;
-  }
-  .content * {
-	text-shadow: 0 0 4vmin rgba(0, 0, 0, 0.25);
-  }
-  .content > .header {
-	grid-row: 1 / 2;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-			flex-direction: column;
-	-webkit-box-pack: end;
-			justify-content: flex-end;
-  }
-  .content > .paragraph {
-	grid-row: 2 / 3;
-	line-height: 1.5;
-  }
-  
-  .heading {
-	font-size: 2.75em;
-	margin: 0;
-  }
-  
-  .subheading {
-	font-size: 1.25em;
-	font-weight: 600;
-	margin-bottom: .5em;
-  }
   
   /* ---------------------------------- */
   .figure {

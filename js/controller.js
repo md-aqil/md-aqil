@@ -51,9 +51,9 @@ var mySwiper = new Swiper('.swiper-container.hero-banner', {
 	// },
 	coverflowEffect: {
         rotate: -3,
-        stretch: 0,
+        stretch: 2,
         depth: 50,
-        modifier: 8,
+        modifier: 10,
         slideShadows : true,
     },
 
@@ -70,6 +70,34 @@ var mySwiper = new Swiper('.swiper-container.hero-banner', {
 
 
 
+var swiper = new Swiper('.swiper-loop', {
+  loop: true,
+  autoplay: {
+    delay: 1,
+  },
+  freeMode: true,
+  speed: 5000,
+  slidesPerView: 6,
+  spaceBetween: 0,
+  breakpoints: {
+    1400: {
+        slidesPerView: 7,
+        spaceBetween: 50,
+        centeredSlides: true,
+     },
+     320: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+     },
+   }
+   
+});
+
+$(".swiper-loop").hover(function () {
+  (this).swiper.autoplay.stop();
+}, function () {
+  (this).swiper.autoplay.start();
+});
 
 $('.click-me').click(function () {
 	$('.drop-menu').toggleClass('open');
@@ -404,48 +432,51 @@ var swiper = new Swiper('.swiper-container.swiperHero', {
   },
 });
 
-document.addEventListener('DOMContentLoaded',function(event){
-  // array with texts to type in typewriter
-  var dataText = ["‘UI/UX’ Designer", "UI/UX Developer",];
-  
-  // type one text in the typwriter
-  // keeps calling itself until the text is finished
-  function typeWriter(text, i, fnCallback) {
-    // chekc if text isn't finished yet
-    if (i < (text.length)) {
-      // add next character to h1
-     document.querySelector(".typetext").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
 
-      // wait for a while and call this function again for next character
-      setTimeout(function() {
-        typeWriter(text, i + 1, fnCallback)
-      }, 70);
-    }
-    // text finished, call callback if there is a callback function
-    else if (typeof fnCallback == 'function') {
-      // call callback after timeout
-      setTimeout(fnCallback, 700);
-    }
-  }
-  // start a typewriter animation for a text in the dataText array
-   function StartTextAnimation(i) {
-     if (typeof dataText[i] == 'undefined'){
-        setTimeout(function() {
-          StartTextAnimation(0);
-        }, 1000);
-     }
-     // check if dataText[i] exists
-    if (i < dataText[i].length) {
-      // text exists! start typewriter animation
-     typeWriter(dataText[i], 0, function(){
-       // after callback (and whole text has been animated), start next text
-       StartTextAnimation(i + 1);
-     });
-    }
-  }
-  // start the text animation
-  StartTextAnimation(0);
+var swiperZoom = new Swiper('.swiper-container.testi', {
+
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: '3',
+    spaceBetween: 0,
+
+  // loop:true,
+  //  autoplay: {
+  //   delay: 1000,
+  //   disableOnInteraction: false,
+  // },     
+
+  effect: 'coverflow',
+  keyboard:true,
+ 
+    coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 10,
+    slideShadows : false,
+  },
+  
 });
+
+
+swiperZoom.on('slideChange', function () {
+  var index = this.activeIndex;
+
+
+  $('.team-info .team-info-item').removeClass('active').eq(this.activeIndex).addClass('active')
+});
+
+$('.slideNext').click(function(argument) {
+
+    swiperZoom.slideNext();
+
+})
+$('.slidePrev').click(function(argument) {
+    
+      swiperZoom.slidePrev();
+
+  })
 
 
 
@@ -510,31 +541,4 @@ var swiperMobile = new Swiper('.swiper-container.swiper-full-mobile', {
 });
 
 
-var swiper = new Swiper('.swiper-loop', {
-  loop: true,
-  autoplay: {
-    delay: 1,
-  },
-  freeMode: true,
-  speed: 5000,
-  slidesPerView: 6,
-  spaceBetween: 0,
-  breakpoints: {
-    1400: {
-        slidesPerView: 7,
-        spaceBetween: 50,
-        centeredSlides: true,
-     },
-     320: {
-        slidesPerView: 4,
-        spaceBetween: 0,
-     },
-   }
-   
-});
 
-$(".swiper-loop").hover(function () {
-  (this).swiper.autoplay.stop();
-}, function () {
-  (this).swiper.autoplay.start();
-});
