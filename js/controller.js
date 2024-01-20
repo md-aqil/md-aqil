@@ -1,4 +1,35 @@
 
+import { Application } from 'https://unpkg.com/@splinetool/runtime';
+
+document.addEventListener('DOMContentLoaded', function () {
+    const canvas = document.getElementById('canvas3d');
+    const app = new Application(canvas);
+    // Load Spline scene
+    app.load('https://prod.spline.design/ezb1nsuygN-UZlZg/scene.splinecode', {
+        onLoad: () => {
+            // Access the scene after it's loaded
+            const splineObject = app.scene.getObjectByName('avatar01');
+            // Now you can perform operations with splineObject
+        },
+    });
+
+    // 967c3bc0-c102-42f8-a7d4-142bc194fdb2
+   
+
+    gsap.to(splineObject.position, {
+      x: 200,  // Adjust the target position as needed
+      duration: 1,
+      ease: 'power2.inOut',
+      scrollTrigger: {
+          trigger: document.body,
+          start: 'top top',
+          end: '+=100%',  // Adjust the end position based on your scroll range
+          scrub: 1,  // Scrub makes the animation follow the scroll speed
+      },
+  });
+
+});
+
 // starter js
 $('body').scrollspy({ target: '#navbar-example2' })
 
@@ -228,7 +259,7 @@ var technologies = new Swiper('#technologies', {
 
 
 
-child =  $('.animation-row').attr('data-child');
+
 
 ScrollOut({
 
