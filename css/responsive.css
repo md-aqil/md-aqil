@@ -11,6 +11,11 @@
         flex-direction: column;
         margin-top: 50px;
     }
+    .top-left {
+        display:flex;
+        flex-wrap:wrap;
+        gap: 12px;
+    }
     .swiper-loop {
         margin: 40px auto;
         width: 100%;

@@ -25,20 +25,43 @@
         position: relative;
         z-index: 1 !important;
       }
-  
-   /* .hero-article  {
-      color: #FFFCEF;
-    }
-    .hero-article b {
-      color: var(--theme-color);
-      font-weight: normal;
-    }
-    .hero-section {
-      background: #000;
-    }
-    .swiper-loop {
-      background-color: #FFFCEF;
-    } */
+     
+
+      
+.mcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+[data-scroll] {
+   background-color: lightgray;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 5px;
+   width: calc(33.333% - 20px);
+   height: 250px;
+   margin: 10px; 
+   will-change: transform; 
+   opacity: 1;
+   opacity: calc(var(--visible-y) * var(--visible-y));
+   transform: scale(calc(0.5 + calc(var(--visible-y) * 0.5)));
+   
+}  
+.mcontainer {
+  width: 100%;
+}
+.mcontainer img {
+  width: 100%;
+}
+.mcontainer [data-scroll] {
+  position: relative;
+}
+.mcontainer [data-scroll] .btn {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
     </style>
     
     <script>
@@ -46,7 +69,9 @@
   </script>
 
 </head>
-<body >
+<body>
+
+
 
       <div class="container pa-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
@@ -98,116 +123,186 @@
         </nav>
       </div>
    
-      <div class="hero-section container" id="home">
-        
-        <div class="row pt-5 pt-row" style="width: 100%;">
-          <div class="col-md-6">
-            <div class="hero-text index-1 text-left mt-5">
-              <h4 class="intro" style="font-weight: 300; font-size: 20px;">HELLO/NAMASTE</h4>
-              <p style="color: #4f1098;">I am Md. Aqil</p>
-              <h1 class="style-text" style="font-size: 60px;">A UI/UX Designer</h1>
-              <article class="hero-article mt-4">
-Passionate about creating <b>intuitive, visually stunning</b> digital products. Experienced in <b>UI/UX design</b>, mastering the latest tools. Driven by <b>user behavior</b> and intensive <b>customer research</b>. Analytical thinker, <b>team player</b>, facilitator.
-              </article>
-              <a href="#contact" target="_blank" class="btn-shine btn-black reveal-text mt-4" data-scroll="in">
-                <span>Let's talk</span>
-          </a>
-            
-             
-          </div>
-          </div>
-          <!-- <div class="col-md-6">
-            <canvas id="canvas3d"></canvas>
-          </div> -->
-
-          <div class="col-md-6 add-mockup">
-            <div class="swiper-container hero-banner ">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img  class="u4" src="./img/Deerika-new.png" alt="">
-                </div>
-              <div class="swiper-slide">
-              <img class="u4" src="img/two.png" alt="">
-              </div>
-             
-                <div class="swiper-slide">
-                  <img class="u4" src="img/3.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="u4" src="img/yellow.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img class="u4" src="img/offers.png" alt="">
-                      </div>
-                    
-              </div>
-            
-              </div>
-          </div>
-        </div>
-    
-      
-        </div>
-       
+     
         
         <div class="container br-x">
-          <div class="swiper-container swiper-loop" style="height: auto;">
-            <div class="swiper-wrapper">
+          <div class="hero-text index-1 text-center mt-3">
            
-              <div class="swiper-slide">
-                <img src="images/tech/html-5.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/tech/css-filetype-100.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/tech/sass-96.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/tech/javascript-100.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/tech/jquery-100.png" alt="jQuery">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/tech/github-90.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/tech/photoshop-96.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/tech/adobe-xd-96.png" alt="">
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
+            <p style="color: #4f1098;">Mockups For Free</p>
+            <h1 class="style-text" style="font-size: 60px;">
+              TShirt Mockup
+            </h1>
+            
+           
         </div>
 
-        
-        <div class="container add-border pb-5" style="border-top: none;">
-          <div class="grid-container">
-            <div class="left">
-              <div class="top-left">
-                <div class="left-top-left">
-                  <div class="top-left-top-left">
+        <div class="mcontainer"></div>
+        </div>
 
-                    <div class="card">
-                      <div class="card-body">
-                        <i class="bee-icon-Stationary fill_color"></i>
-                        <h5 class="card-title">UI/UX Design</h5>
-                        <p class="paragraph">
-                          Crafting engaging digital experiences for web and mobile platforms, ensuring your brand captivates users.
     
-                        </p>
-                        
-                      </div>
-                    </div>
+        <div class="container add-border" style="border-top: none;">
+          <div class="row">
+            <div class="col-md-6" style="align-items: center;
+            display: flex;
+        ">
+ 
+              <div class="flex-box-wrap">
+                <main class="main-single-view">
+                  <div class="swiper-container testi"  dir="rtl">
+                      <div class="swiper-wrapper">
+                       
+                         <div class="swiper-slide">
+                          <img src="./img/deer-3275594_1280.jpg" alt="">
+                        </div>
+                         <div class="swiper-slide">
+                          <img src="./img/deer-3275594_1280.jpg" alt="">
+                        </div>
 
-                   
+                        <div class="swiper-slide">
+                          <img src="./img/deer-3275594_1280.jpg" alt="">
+                        </div>
+                        
+                        
+                      <!-- Add Pagination -->
+                 
+                    </div>
                   </div>
-                  <div class="mid-left-top-left">
-                    <div class="card">
+             
+                </main>
+              <aside class="single-view-content">
+                 <ul class="team-info">
+                   <li class="team-info-item active">
+                       <h1 class="heading">Ashutosh Sharma</h1>
+                       
+                      <article class="content">
+                        <p>UI Development</p>
+                         <p>
+                          Collaborating with Aqil has been instrumental in bringing our designs to life. He possesses a strong technical skill set, translating our static designs into dynamic and responsive user interfaces. Their proficiency in coding languages and frameworks is evident in the seamless functionality of the final products.
+                           </p>
+                        
+             
+                     </article>
+                   
+                   </li>
+                   <li class="team-info-item ">
+                    <h1 class="heading">Rakesh Daundhiyal</h1>
+                   <article class="content">
+                    <p>Design/Development</p>
+
+                      <p>
+                        In conclusion, the combined efforts of Md Aqil have elevated the quality of our projects significantly. Their individual expertise and collaborative approach have resulted in seamless and visually appealing solutions. I highly recommend their services to anyone seeking comprehensive and high-quality UI/UX design, CMS development, and UI development.
+                        </p>
+                     
+          
+                  </article>
+                
+                </li>
+                <li class="team-info-item ">
+                  <h1 class="heading">Bijender Sharma</h1>
+                  <p>UI/UX Desin</p>
+                 <article class="content">
+                  <p>Design/Development</p>
+
+                    <p>
+                      Collaborating with Aqil was exceptional. The designs are visually stunning, user-friendly, and exceeded expectations. Aqil's skillful translation of complex ideas, coupled with open communication and a collaborative approach, made the process smooth. Highly recommend Aqil for top-notch UI/UX design.
+
+                      </p>
+                   
+        
+                </article>
+              
+              </li>
+        
+                   
+                 </ul>
+                 <div class="arrow-box">
+                     <div class="slidePrev">
+                    
+             <svg x="0px" y="0px"
+                viewBox="0 0 31.494 31.494" style="enable-background:new 0 0 31.494 31.494;" xml:space="preserve">
+             <path style="fill:#1E201D;" d="M10.273,5.009c0.444-0.444,1.143-0.444,1.587,0c0.429,0.429,0.429,1.143,0,1.571l-8.047,8.047h26.554
+               c0.619,0,1.127,0.492,1.127,1.111c0,0.619-0.508,1.127-1.127,1.127H3.813l8.047,8.032c0.429,0.444,0.429,1.159,0,1.587
+               c-0.444,0.444-1.143,0.444-1.587,0l-9.952-9.952c-0.429-0.429-0.429-1.143,0-1.571L10.273,5.009z"/>
+             
+             </svg>
+             
+                     </div>
+                     <div class="slideNext">
+                       
+                       <svg version="1.1" x="0px" y="0px"
+                          viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve">
+                       <path style="fill:#1E201D;" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+                         C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+                         c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+                       <g>
+                       </svg>
+                     </div>
+                 </div>
+                
+              </aside>
+             </div>
+             
+             
+             
+             
+            </div>
+            <div class="col-md-6">
+              <div class="list-group">
+                <div class="list-group-item border-0">
+                  <h5 class="mb-1">E-commerce Excellence</h5>
+                  <p class="mb-1">Embark on a journey of online success with our expertly crafted e-commerce websites. Navigable, optimized for sales, and designed for seamless user experiences.</p>
+                </div>
+              
+                <div class="list-group-item border-0">
+                  <h5 class="mb-1">Custom Web Applications</h5>
+                  <p class="mb-1">Empower your business with tailor-made web applications. From web-based CRMs to inventory management systems, our team delivers custom solutions to fit your unique requirements.</p>
+                </div>
+              
+                <div class="list-group-item border-0">
+                  <h5 class="mb-1">Responsive Design Mastery</h5>
+                  <p class="mb-1">Seamless experiences across all devices. Our team specializes in responsive design, ensuring your website looks and functions flawlessly, providing a user-centric experience.</p>
+                </div>
+              
+                <div class="list-group-item border-0">
+                  <h5 class="mb-1">CMS Development Simplified</h5>
+                  <p class="mb-1">Take control of your content effortlessly. We specialize in developing customized Content Management Systems (CMS) that empower you to manage your website content with ease.</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+
+     
+        <div class="container spacer" id="services">
+          <div class="text-center width100">
+                  
+            <h2 class="title">Innovative Design & Development</h2>
+               
+            <p>
+              I also Contribute and share on <b><a class="theme-text" href="https://codepen.io/md-aqil">Codepen</a></b>
+            </p>
+                 
+              </div>
+              
+          <div class="row service-row">
+            <div class="col-md-4 fade-in delay_1" data-scroll="in">
+              <div class="card">
+                  <div class="card-body">
+                    <i class="bee-icon-Stationary fill_color"></i>
+                    <h5 class="card-title">UI/UX Design</h5>
+                    <p class="paragraph">
+                      Crafting engaging digital experiences for web and mobile platforms, ensuring your brand captivates users.
+
+                    </p>
+                    
+                  </div>
+                </div>
+          </div>
+  
+              <div class="col-md-4 fade-in delay_2" data-scroll="in">
+                  <div class="card">
                       <div class="card-body">
                         <i class="bee-icon-website-design-symbol fill_color"></i>
                         <h5 class="card-title">Web Designing</h5>
@@ -220,59 +315,39 @@ Passionate about creating <b>intuitive, visually stunning</b> digital products. 
                         
                       </div>
                     </div>
+              </div>
+              <div class="col-md-4 fade-in delay_3" data-scroll="in">
+                <div class="card">
+                    <div class="card-body">
+                      <i class="bee-icon-mobile fill_color"></i>
+                      <h5 class="card-title">Mobile App Design</h5>
+                      <p class="paragraph">
+                        Transforming app ideas into visually stunning and user-friendly mobile experiences.
+
+
+                      </p>
+                      <!-- <a href="#" class="card-link">Read More</a> -->
+                      
+                    </div>
                   </div>
-                  <div class="bottom-left-top-left">
-                    <div class="card">
+            </div>
+  
+              <div class="col-md-4 fade-in delay_4" data-scroll="in">
+                  <div class="card">
                       <div class="card-body">
-                        <i class="bee-icon-mobile fill_color"></i>
-                        <h5 class="card-title">Mobile App Design</h5>
+                        <i class="bee-icon-code fill_color"></i>
+                        <h5 class="card-title">Development </h5>
                         <p class="paragraph">
-                          Transforming app ideas into visually stunning and user-friendly mobile experiences.
-  
-  
+                          Expert in translating designs from PSD, Figma, and XD into high-quality HTML, with a focus on WordPress development.
+
                         </p>
                         <!-- <a href="#" class="card-link">Read More</a> -->
-                        
                       </div>
                     </div>
-
-                  </div>
-                </div>
-                <div class="right-top-left">
-                  <div class="mid-top">
-                    <div class="left-mid-top">
-                      <div class="card">
-                        <div class="card-body">
-                          <i class="bee-icon-code fill_color"></i>
-                          <h5 class="card-title">Development </h5>
-                          <p class="paragraph">
-                            Expert in translating designs from PSD, Figma, and XD into high-quality HTML, with a focus on WordPress development.
-  
-                          </p>
-                          <!-- <a href="#" class="card-link">Read More</a> -->
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="right-mid-top">
-                      <div class="card">
-                        <div class="card-body">
-                          <i class="bee-icon-mobile fill_color"></i>
-                          <h5 class="card-title">100% Responsive</h5>
-                          <p class="paragraph">
-                            Guaranteeing a fully responsive design that looks amazing on every device, ensuring a consistent user experience.
-  
-                          </p>
-                          <!-- <a href="#" class="card-link">Read More</a> -->
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mid-mid">
-                    <div class="card">
+              </div>
+              <div class="col-md-4 fade-in delay_5" data-scroll="in">
+                  <div class="card">
                       <div class="card-body">
-                        
                         <i class="bee-icon-coffee-cup-f fill_color"></i>
                       
                         <h5 class="card-title">Web Animation</h5>
@@ -280,23 +355,31 @@ Passionate about creating <b>intuitive, visually stunning</b> digital products. 
                           Enhancing websites with captivating animations using GreenSock and lottiefiles for memorable user interactions.
 
                         </p>
-                        
+                        <!-- <a href="#" class="card-link">Read More</a> -->
                         
                       </div>
                     </div>
-                  </div>
-                </div>
               </div>
-             
-            </div>
           
-          </div>
+         
+              <div class="col-md-4 fade-in delay_6" data-scroll="in">
+                  <div class="card">
+                      <div class="card-body">
+                        <i class="bee-icon-mobile fill_color"></i>
+                        <h5 class="card-title">100% Responsive</h5>
+                        <p class="paragraph">
+                          Guaranteeing a fully responsive design that looks amazing on every device, ensuring a consistent user experience.
 
+                        </p>
+                        <!-- <a href="#" class="card-link">Read More</a> -->
+                        
+                      </div>
+                    </div>
+              </div>
            
-        </div>
-
-     
-       
+          </div>
+      </div>
+   
    
 
   <div class="container spacer" id="portfolio">
@@ -614,8 +697,50 @@ Passionate about creating <b>intuitive, visually stunning</b> digital products. 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script>
-      var scene = document.getElementById('scene');
-      var parallaxInstance = new Parallax(scene);
+    
+    var imagePaths = [
+    'https://picsum.photos/400/300/',
+    'https://picsum.photos/400/300/',
+    'https://picsum.photos/400/300/',
+    // Add more image paths as needed
+  ];
+
+  var fragment = document.createDocumentFragment();
+  for (var i = 0; i < imagePaths.length; i++) {
+    // create photo div
+    var photo = document.createElement("div");
+    // add data-scroll attribute so ScrollOut will target these elements
+    photo.setAttribute('data-scroll', '');
+
+    // create image element
+    var image = document.createElement("img");
+    image.src = imagePaths[i];
+    photo.appendChild(image);
+
+    // create download button
+    var downloadButton = document.createElement("button");
+    downloadButton.textContent = "Download";
+    downloadButton.classList = "btn btn-primary";
+    downloadButton.addEventListener('click', function () {
+      // logic to download the image (you can replace this with your own logic)
+      alert('Download logic for image: ' + this.previousElementSibling.src);
+    });
+    photo.appendChild(downloadButton);
+
+    fragment.appendChild(photo);
+  }
+
+  // append document fragments to container
+  document.querySelector(".mcontainer").appendChild(fragment);
+
+  // call scrollout with variables enabled
+  ScrollOut({
+    threshold: 0.5,
+    cssProps: {
+      visibleY: true
+    }
+  });
+
     </script>
 </body>
 </html>
