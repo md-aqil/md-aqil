@@ -2,10 +2,27 @@
     .hero-section {
         height: 100%;
     }
+    .container {
+        max-width: 95% !important;
+        width: 95% !important;
+    }
+    .mid-top {
+        display:flex;
+        flex-direction: column;
+        gap:10px; 
+        margin-top:10px;
+        margin-bottom:10px;
+    }
     .work-art svg {
         width: 100%;
         height: 220px;
         margin-top: 0;
+    }
+    .mid-top {
+        /* height: 300px; */
+    }
+    .right-top-left {
+        grid-template-rows: 0.8fr 0.8fr;
     }
     .fl-inline {
         flex-direction: column;

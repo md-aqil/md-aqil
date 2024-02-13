@@ -448,6 +448,9 @@ color: #fff;
     border-radius: 30px;
     object-position: top;
 }
+.hero-banner .swiper-slide-active img {
+    border: 7px solid #ccc;
+}
 .char {
     position: absolute;
     bottom: 17px;
@@ -1189,6 +1192,7 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
   }
   .swiper-full-mobile .swiper-slide.swiper-slide-active {
       /* border-radius: 20px; */
+      border: 10px solid #fff;
     
   }
   

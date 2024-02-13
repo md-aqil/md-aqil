@@ -1,6 +1,10 @@
 :root {
     --theme-color1: #FE8E1C;
 }
+.container {
+    width: 80%;
+    max-width: 80%;
+}
 
 .fill_color {
     background: none;
@@ -33,14 +37,78 @@
 .navbar-light .navbar-nav .nav-link {
     color: #222 !important;
 }
+
+
+
+
 .hero-section {
     border: 1px solid #222222;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
 }
 
+.grid-border {
+    position: relative;
+
+}
+
+/* 
+
+.grid-border:before {
+    content: "";
+    height: 1px;
+    width: 80px;
+    background:  #222222;
+    left: -80px;
+    top: -1px;
+    z-index: 100;
+    display: block;
+    position: absolute;
+}
+
+
+.grid-border:after {
+    content: "";
+    height: 1px;
+    width: 80px;
+    right: -80px;
+    top: -1px;
+    z-index: 100;
+    display: block;
+    position: absolute;
+    background: #222;
+} */
+/* 
+.hero-section:before {
+    content: "";
+    height: 1px;
+    width: 80px;
+    background:  #222222;
+    left: -80px;
+    top: -1px;
+    z-index: 100;
+    display: block;
+    position: absolute;
+}
+
+
+.hero-section:after {
+    content: "";
+    height: 1px;
+    width: 80px;
+    background: #222222;
+    right: -80px;
+    top: -1px;
+    z-index: 100;
+    display: block;
+    position: absolute;
+}
+ */
+
 .navbar {
-    border: 1px solid #222222;
+    border-left: 1px solid #222222;
+    border-right: 1px solid #222222;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -129,7 +197,7 @@ body {
 }
 
   #portfolio .col-md-4 {
-    border-top: 1px solid #222;
+    /* border-top: 1px solid #222; */
     border-right: 1px solid #222;
 }
 
@@ -142,7 +210,7 @@ body {
 }
 
 .add-border [class^="col-md"] {
-    border-top: 1px solid #222;
+    /* border-top: 1px solid #222; */
     border-right: 1px solid #222;
   }
 
