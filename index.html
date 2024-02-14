@@ -19,8 +19,18 @@
   <meta name="twitter:description" content="Transforming digital experiences with expert UI/UX design and development services. Explore innovative solutions for intuitive user interfaces.">
   <meta name="twitter:image" content="https://md-aqil.github.io/md-aqil/img/about-me-img.png"> <!-- Replace with your actual image URL -->
 
+  
   <title>Md Aquil - UI/UX Design and Development Services</title>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NM116BWDFZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NM116BWDFZ');
+</script>
 
 
 
@@ -34,7 +44,9 @@
     <link rel="stylesheet" href="./css/aqil2.0.css">
     <!-- <script type="module" src="https://unpkg.com/@splinetool/runtime"></script> -->
     
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <style>
       .main-port {
         position: absolute;
@@ -318,7 +330,19 @@ Passionate about creating <b>intuitive, visually stunning</b> digital products. 
 
      
        
-   
+   <!-- <div class="container">
+    <div id="app">
+      
+      <div v-for="(site, index) in sites" :key="index">
+        <h2>{{ site.site_name }}</h2>
+        <p>URL: <a :href="site.site_url" target="_blank">{{ site.site_url }}</a></p>
+        <p>Tags: {{ site.tags }}</p>
+        <img :src="site.thumbnail" alt="Thumbnail" v-if="site.thumbnail">
+        <hr>
+    </div>
+
+  </div>
+   </div> -->
 
   <div class="container spacer grid-border" id="portfolio">
     <div class="text-center">
@@ -631,6 +655,34 @@ Passionate about creating <b>intuitive, visually stunning</b> digital products. 
   <script  type="module" src="js/controller.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <script>
+     new Vue({
+            el: '#app',
+            data: {
+                sites: []
+            },
+            mounted() {
+                // Make the API request when the component is mounted
+                this.getData();
+            },
+            methods: {
+                getData() {
+                    // Make a GET request to your API
+                    axios.get('https://api.sheetapi.rest/api/v1/sheet/6UbUCxQuwg96QrgRKS9K4')
+                        .then(response => {
+                            // Update the 'sites' data property with the received data
+                            this.sites = response.data;
+                            console.log('data', this.sites)
+                        })
+                        .catch(error => {
+                            console.error('Error fetching data:', error);
+                        });
+                }
+            }
+        });
+  </script>
+
     <script>
       var scene = document.getElementById('scene');
       var parallaxInstance = new Parallax(scene);
