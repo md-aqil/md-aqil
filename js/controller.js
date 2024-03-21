@@ -107,17 +107,18 @@ var swiper = new Swiper('.swiper-loop', {
     delay: 1,
   },
   freeMode: true,
-  speed: 5000,
-  slidesPerView: 6,
+  speed: 9000,
+  slidesPerView: "auto",
   spaceBetween: 0,
+
   breakpoints: {
     1400: {
-        slidesPerView: 7,
-        spaceBetween: 50,
+        slidesPerView: 2,
+        spaceBetween: 0,
         centeredSlides: true,
      },
      320: {
-        slidesPerView: 4,
+        slidesPerView: "auto",
         spaceBetween: 0,
      },
    }

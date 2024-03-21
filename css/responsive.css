@@ -2,6 +2,9 @@
     .hero-section {
         height: 100%;
     }
+    .swiper-loop .swiper-slide {
+        font-size: 15px;
+    }
     .container {
         max-width: 95% !important;
         width: 95% !important;
@@ -80,7 +83,8 @@
     left: -8px;
     }
     .hero-text {
-        text-align: center;
+        text-align: center !important;
+
     }
     .hero-text * {
         text-align: center;

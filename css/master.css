@@ -1399,3 +1399,11 @@ background: linear-gradient(#ed1e79 , #53277e) !important;
         }
   }
  
+  .card ul {
+    padding-left: 15px;
+    margin:0;
+  }
+  .card ul li {
+    font-size: 15px;
+    padding: 5px 0;
+  }
